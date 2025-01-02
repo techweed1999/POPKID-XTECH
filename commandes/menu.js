@@ -34,24 +34,24 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭──────────────────❂
-┊✞︎╭───*𝐄𝐍𝐙𝐎-𝐌𝐃*────❂
-┊✞︎┊ *𝐔𝐬𝐞𝐫* : ${s.OWNER_NAME}
-┊✞︎┊ *𝐌𝐨𝐝𝐞* : ${mode}
-┊✞︎╰───────────────❂
-┊✞︎┊ *𝐓𝐢𝐦𝐞* : ${temps}  
-┊✞︎┊ *𝐑𝐀𝐌* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┊✞︎╰───────────────❂
+┊❄️╭───*𝐄𝐍𝐙𝐎-𝐌𝐃*────❂
+┊❄️┊ *𝐔𝐬𝐞𝐫* : ${s.OWNER_NAME}
+┊❄️┊ *𝐌𝐨𝐝𝐞* : ${mode}
+┊❄️╰───────────────❂
+┊❄️┊ *𝐓𝐢𝐦𝐞* : ${temps}  
+┊❄️┊ *𝐑𝐀𝐌* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┊🎄╰───────────────❂
 ╰──────────────────❂ \n\n`;
  
     let menuMsg=`  
-  *𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒*
+  *𝐄𝐍𝐙𝐎 𝐌𝐃 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒*
 `;
 
     for (const cat in coms) {
         menuMsg += `*╭────❂* *${cat}* *❂*`;
         for (const cmd of coms[cat]) {
             menuMsg += `  
-*┊😇* ${cmd}`;
+*┊🚦* ${cmd}`;
         }
         menuMsg += `
 *╰═════════════❂* \n`
@@ -59,9 +59,9 @@ const date = moment().format('DD/MM/YYYY');
 
     menuMsg += `
 ◇            ◇
-*—————✞︎☠︎︎☠︎︎✞︎—————*
+*—————🎁🎁🎁🎁—————*
 
-  *𝐏𝐎𝐏𝐊𝐈𝐃 𝐓𝐄𝐂𝐇*                                         
+  *𝐄𝐍𝐙𝐎 𝐓𝐄𝐂𝐇*                                         
 *╰═════════════❂*
 `;
 
