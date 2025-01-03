@@ -1,3 +1,4 @@
+
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -15,6 +16,7 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
+
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -110,7 +112,39 @@ setTimeout(() => {
         };
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
-        setInterval(() => { store.writeToFile("store.json"); }, 3000);
+        // Auto-react to status updates, handling each status one-by-one without tracking
+if (conf.ANYWAY_MD === "yes") {
+    zk.ev.on("messages.upsert", async (m) => {
+        const { messages } = m;
+        
+        for (const message of messages) {
+            if (message.key && message.key.remoteJid === "status@broadcast") {
+                try {
+                    const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
+
+                    if (adams) {
+                        // React to the status with a green heart
+                        await zk.sendMessage(message.key.remoteJid, {
+                            react: {
+                                key: message.key,
+                                text: "💜",
+                            },
+                        }, {
+                            statusJidList: [message.key.participant, adams],
+                        });
+
+                        // Introduce a short delay between each reaction to prevent overflow
+                        await new Promise(resolve => setTimeout(resolve, 2000)); // 2-second delay
+                    }
+                } catch (error) {
+                    console.error("Error decoding JID or sending message:", error);
+                }
+            }
+        }
+    });
+}
+
+        
         zk.ev.on("messages.upsert", async (m) => {
             const { messages } = m;
             const ms = messages[0];
@@ -134,7 +168,7 @@ setTimeout(() => {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const dj='22559763447';
+            /* const dj='254111385747';
              const dj2='254751284190';
              const luffy='254762016957'*/
             /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
@@ -156,8 +190,8 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '255678892560';
-            const dj2 = '255678892560';
+            const dj = '254111385747';
+            const dj2 = '254732297194';
             const dj3 = "255678892560";
             const luffy = '255678892560';
             const sudo = await getAllSudoNumbers();
@@ -167,7 +201,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\tANYWAY MD ONLINE");
+            console.log("\tPOPKID MD ONLINE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -528,7 +562,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Anyway-Md',
+                pack: 'popkid-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -672,7 +706,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*ANYWAY MD WELCOME MESSAGE*`;
+            let msg = `*POPKID MD WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
@@ -806,18 +840,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Anyway Md is connecting...");
+                console.log("ℹ️ Popkid Md is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Anyway Md Connected to WhatsApp! ☺️");
+                console.log("✅ Popkid Md Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Anyway Md is Online 🕸\n\n");
+                console.log("Popkid Md is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Anyway Commands ...\n");
+                console.log("Loading Popkid Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
