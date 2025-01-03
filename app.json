@@ -2,7 +2,7 @@
   "name":"POPKID",
   "description":"Best whatsapp bot developed by POPKID",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://i.ibb.co/LpK2MK7/1728892250720.jpg",
+  "logo":"https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
   "repository":"https://github.com/Popkiddevs/POPKID-XTECH",
   "succes_url":"/",
   "stack":"container",
@@ -42,7 +42,7 @@
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.ibb.co/LpK2MK7/1728892250720.jpg",
+      "value":"https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
       "required":false
        
      },
