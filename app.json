@@ -1,13 +1,13 @@
 {
-  "name":"POPKID",
-  "description":"Best whatsapp bot developed by POPKID",
+  "name":"POPKID-XTECH",
+  "description":"Best whatsapp bot developed by POPKID ",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
   "repository":"https://github.com/Popkiddevs/POPKID-XTECH",
   "succes_url":"/",
   "stack":"container",
   "env":{
-    "PREFIX":
+    "PREFIX": 
     {
       "description":"choose your prefix of bot",
       "value":".",
@@ -16,6 +16,12 @@
     "AUTO_READ_STATUS":
     {
       "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+      "value":"yes",
+      "required":false
+	    },
+    "AUTO_LIKE_STATUS":
+    {
+      "description":"Your contact status will be reacting automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"yes",
       "required":false
     }, "AUTO_DOWNLOAD_STATUS":
@@ -35,7 +41,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"ᴘᴏᴘᴋɪᴅ ᴍᴅ",
+      "value":"POPKID-XTECH",
       "required":false
 
     } ,
@@ -74,7 +80,7 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "ℙ𝕆ℙ 𝕂𝕀𝔻"
+    "value": "POPKID"
   },
     "NUMERO_OWNER":
   {
