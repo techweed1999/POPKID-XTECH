@@ -10,7 +10,7 @@ zokou(
     // URLs and configurations
     const fullImageUrl = "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"; // Full image URL
     const smallThumbnailUrl = "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"; // Small thumbnail URL
-    const randomAudio = "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"; // Voice note URL
+    const randomAudio = "https://files.catbox.moe/0i5636.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3lf"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
@@ -57,8 +57,8 @@ zokou(
     // URLs and configurations
     const fullImageUrl = "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"; // Full image URL
     const smallThumbnailUrl = "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"; // Small thumbnail URL
-    const randomAudio = "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"; // Voice note URL
-    const sourceUrl = "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"; // Channel link
+    const randomAudio = "https://files.catbox.moe/0i5636.mp3"; // Voice note URL
+    const sourceUrl = "https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
     try {
