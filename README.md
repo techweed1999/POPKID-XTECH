@@ -16,6 +16,9 @@
 </a></p>
 - <a href="https://github.com/Popkiddevs/POPKID-XTECH/fork"><img title="FORK THIS REPO" src="https://img.shields.io/badge/TAP TO FORK REPO-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=tesla&logoColor=black" width="240" height="38.45"/></a></p>
 
+# GET PAIRING CODE HERE
+</a></p>
+- <a href="https://popkid-pair.onrender.com"><img title="GET SESSION ID HERE" src="https://img.shields.io/badge/SCAN CODE HERE-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=tesla&logoColor=black" width="240" height="38.45"/></a></p>
 
 # CREATE HEROKU ACCOUNT 
 
