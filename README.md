@@ -12,18 +12,18 @@
  <img alt="ℙ𝕆ℙ𝕂𝕀𝔻 𝕄𝔻" height="300" src="https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg">
  
 
-# FORK MY REPO
+# ғᴏʀᴋ ᴍʏ ʀᴇᴘᴏ
 </a></p>
 - <a href="https://github.com/Popkiddevs/POPKID-XTECH/fork"><img title="FORK THIS REPO" src="https://img.shields.io/badge/TAP TO FORK REPO-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=tesla&logoColor=black" width="240" height="38.45"/></a></p>
 
-# GET PAIRING CODE HERE
+# ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ
 </a></p>
-- <a href="https://popkid-pair.onrender.com"><img title="GET SESSION ID HERE" src="https://img.shields.io/badge/SCAN CODE HERE-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=tesla&logoColor=black" width="240" height="38.45"/></a></p>
+- <a href="https://popkid-pair-1.onrender.com"><img title="GET SESSION ID HERE" src="https://img.shields.io/badge/SCAN CODE HERE-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=tesla&logoColor=black" width="240" height="38.45"/></a></p>
 
-# CREATE HEROKU ACCOUNT 
+# ᴄʀᴇᴀᴛᴇ ʜᴇʀᴏᴋᴜ
 
 </a></p>
 - <a href='https://signup.heroku.com/' target="_silver"><img alt='Heroku' src='https://img.shields.io/badge/-ℂℝ𝔼𝔸𝕋𝔼 𝔸ℂℂ𝕆𝕌ℕ𝕋 ℕ𝕆𝕎-rgb(224, 255, 255)?style=for-the-badge&logo=tesla&logoColor=black' width="240" height="38.45"/></a>
 
-# DEPLOY
+# ᴅᴇᴘʟᴏʏ ʙᴏᴛ
 - <a align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Popkiddevs/POPKID-XTECH"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-red?style=for-the-badge&logo=tesla" width="220" height="38.45"/></a></p>
