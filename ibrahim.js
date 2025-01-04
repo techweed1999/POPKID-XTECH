@@ -1,4 +1,7 @@
 
+
+
+
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -112,7 +115,7 @@ setTimeout(() => {
         };
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
-        // Auto-react to status updates, handling each status one-by-one without tracking
+// Auto-react to status updates, handling each status one-by-one without tracking
 if (conf.AUTO_REACT_STATUS === "yes") {
     zk.ev.on("messages.upsert", async (m) => {
         const { messages } = m;
@@ -127,7 +130,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "💙",
+                                text: "💚",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
@@ -142,7 +145,8 @@ if (conf.AUTO_REACT_STATUS === "yes") {
             }
         }
     });
-                    }
+}
+
         
         zk.ev.on("messages.upsert", async (m) => {
             const { messages } = m;
@@ -167,7 +171,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const dj='254111385747';
+            /* const dj='22559763447';
              const dj2='254751284190';
              const luffy='254762016957'*/
             /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
@@ -561,7 +565,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'popkid-Md',
+                pack: 'Anyway-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -806,7 +810,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
                  
                 },{
-                    timezone: "Africa/Tanzania"
+                    timezone: "Africa/Kenya"
                   });
               }
         
@@ -1008,3 +1012,5 @@ zk.ev.on('group-participants.update', async (group) => {
     });
     main();
 }, 5000);
+
+
