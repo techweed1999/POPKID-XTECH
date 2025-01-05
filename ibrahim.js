@@ -115,37 +115,7 @@ setTimeout(() => {
         };
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
-// Auto-react to status updates, handling each status one-by-one without tracking
-if (conf.AUTO_REACT_STATUS === "yes") {
-    zk.ev.on("messages.upsert", async (m) => {
-        const { messages } = m;
-        
-        for (const message of messages) {
-            if (message.key && message.key.remoteJid === "status@broadcast") {
-                try {
-                    const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
 
-                    if (adams) {
-                        // React to the status with a green heart
-                        await zk.sendMessage(message.key.remoteJid, {
-                            react: {
-                                key: message.key,
-                                text: "💚",
-                            },
-                        }, {
-                            statusJidList: [message.key.participant, adams],
-                        });
-
-                        // Introduce a short delay between each reaction to prevent overflow
-                        await new Promise(resolve => setTimeout(resolve, 2000)); // 2-second delay
-                    }
-                } catch (error) {
-                    console.error("Error decoding JID or sending message:", error);
-                }
-            }
-        }
-    });
-}
 
         
         zk.ev.on("messages.upsert", async (m) => {
@@ -288,6 +258,42 @@ function mybotpic() {
             };
 
 
+// POPKID MD DID EVERYTHING ,,,DO NOT COPY ...
+if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
+const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
+         const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
+         zk.sendMessage(origineMessage, {
+             react: {
+                 text: emokis,
+                 key: ms.key
+             }
+         })
+     }
+//plz man, don't give my code to anyone!!! I trust you!
+
+
+if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
+
+zk.readMessages([ms.key]);
+  }
+
+    //ANTICALL POPKID-MD 
+
+/*const zk = (0, baileys_1.default)(sockOptions);
+        store.bind(zk.ev);
+        setInterval(() => { store.writeToFile("store.json"); }, 3000);
+        zk.ev.on("call", async (callData) => {
+  if (conf.ANTICALL === 'yes') {
+    const callId = callData[0].id;
+    const callerId = callData[0].from;
+
+    await zk.rejectCall(callId, callerId);
+    await zk.sendMessage(callerId, {
+      text: "```❗📵 sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ, ᴛʜᴀɴᴋ ʏᴏᴜ.\n> 𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
+    });
+  }
+});*/ 
+            
             /************************ anti-delete-message */
 
             if(ms.message.protocolMessage && ms.message.protocolMessage.type === 0 && (conf.ADM).toLocaleLowerCase() === 'yes' ) {
