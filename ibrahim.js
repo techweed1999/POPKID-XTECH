@@ -891,11 +891,18 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =`      ❒─❒⁠⁠⁠⁠ *BOT-IS-RUNNING* ❒⁠⁠⁠⁠─⁠⁠⁠⁠❒⁠⁠⁠⁠
-╭❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠              
-❒⁠⁠⁠⁠ 𝑫𝑬𝑽   : *POPKID*   
-❒⁠⁠⁠⁠ 𝑩𝑶𝑻   : *POPKID-XTECH*
-╰❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠`;
+                let cmsg =` ᴘᴏᴘᴋɪᴅ-ᴍᴅ ʙᴏᴛ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ...
+
+ ╭────────────────◆
+ │  ᴘʀᴇғɪx : [ ${prefixe} ]
+ │  ᴍᴏᴅᴇ : ${md}
+ │  ᴘʟᴜɢɪɴs : 345
+ │  ᴘʟᴀᴛғᴏʀᴍ : ᴄʜʀᴏᴍᴇ(ᴜʙᴜɴᴛᴜ)
+ │  ᴅᴇᴠ : ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ 254 🇰🇪
+ ╰─────────────────◆
+
+sᴜᴘᴘᴏʀᴛ ʙʏ sᴜʙsᴄʀɪʙɪɴɢ
+youtube.com/@popkid-254`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
