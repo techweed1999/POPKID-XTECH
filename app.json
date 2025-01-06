@@ -36,9 +36,8 @@
       "description": "no calls on WhatsApp...reject automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value": "no",
       "required": false
-    }
-      "AUTO_REACT_STATUS":
-    {
+    },
+      "AUTO_REACT_STATUS": {
       "description":"Enter yes for your bot to auto react status",
       "value":"yes",
       "required":false
