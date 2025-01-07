@@ -1,36 +1,63 @@
-const {zokou} =require("../framework/zokou");
-const axios =require("axios");
+const { zokou } = require('../framework/zokou');
+const lyricsFinder = require('lyrics-finder');
+const yts = require('yt-search');
 
+zokou({
+    nomCom: 'lyrics',
+    aliases: ['lyric', 'fave mr man'],
+    reaction: '📑',
+}, async (zk, dest, context) => {
+    const { repondre, arg, ms } = context;
 
-zokou({ nomCom: "lyrics",
-        reaction: "✨",
-        categorie: "Search" }, async (dest, zk, commandeOptions) => {
-    
-    const { repondre, arg, ms } = commandeOptions;  
-        
-   try {
+    try {
+        // Check if the argument (song and artist) is provided
+        if (!arg || arg.length === 0) {
+            return repondre('Please provide a song name and artist.');
+        }
 
-    if (!arg || arg.length === 0) return repondre("Where is the name of musique");
+        // Create a search query from the arguments
+        const searchQuery = arg.join(' ');
 
-    let  result  = await axios.get(`https://vihangayt.me/search/lyrics?q=${arg.join(' ')}`);
+        // Search for the song using yt-search
+        const info = await yts(searchQuery);
+        const results = info.videos;
 
-    let lyrics = result.data.data;
+        // Check if no results were found
+        if (!results || results.length === 0) {
+            return repondre('No results found for the given song or artist.');
+        }
 
-    if (lyrics.error) return repondre("no lyrics found");
+        // Extract title and artist from the search query
+        const songDetails = searchQuery.split(' ').reverse();
+        const title = songDetails.slice(0, songDetails.length - 1).join(' ');
+        const artist = songDetails[songDetails.length - 1];
 
-    let msg = `---------Popkid-lyrics-finder--------
+        // Fetch the lyrics using lyrics-finder
+        const lyrics = await lyricsFinder(artist, title);
 
-* *Artist :* ${lyrics.artist}
+        // Check if lyrics are found
+        if (!lyrics) {
+            return repondre(`Sorry, I couldn't find any lyrics for "${searchQuery}". Please try another song.`);
+        }
 
+        // Format the message to send to the user
+        const formattedMessage = `
+*POPKID MD PLANET LYRICS FINDER*
+*Title:* ${title}
+*Artist:* ${artist}
 
-* *Title :* ${lyrics.title}
+${lyrics}
+        `;
 
+        // Send the response with the song's thumbnail and lyrics
+        await zk.sendMessage(dest, {
+            image: { url: results[0].thumbnail },
+            caption: formattedMessage,
+        }, { quoted: ms });
 
-${lyrics.lyrics}`
-
-    zk.sendMessage(dest,{image : { url : './media/lyrics-img.jpg'} , caption : msg}, { quoted : ms });
-    
-   } catch (err) {
-       repondre('Error')
-   }
-        })
+    } catch (error) {
+        // Handle any errors that occur
+        repondre(`Error: I was unable to fetch the lyrics. Please try again later.\n\n${error.message}`);
+        console.log(error);
+    }
+});
