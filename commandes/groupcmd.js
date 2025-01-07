@@ -450,7 +450,7 @@ zokou({
     const _0x9a395b = await _0x2c3517.groupRequestParticipantsUpdate(_0x43946b, [_0x5dcd51.jid], 'approve');
     console.log(_0x9a395b);
   }
-  _0x298913("All pending participants have been approved to join by Lucky md.");
+  _0x298913("All pending participants have been approved to join by popkid md.");
 });
 
 zokou({
