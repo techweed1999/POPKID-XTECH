@@ -114,7 +114,7 @@ setTimeout(() => {
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
    // Auto-react to status updates, handling each status one-by-one without tracking
-if (conf.POPKID_XTECH === "yes") {
+if (conf.TECH === "yes") {
     zk.ev.on("messages.upsert", async (m) => {
         const { messages } = m;
         
@@ -300,7 +300,7 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
 //plz man, don't give my code to anyone!!! I trust you!
 
 
-if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
+if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGE === "yes") {
 
 zk.readMessages([ms.key]);
   }
@@ -599,7 +599,7 @@ zk.readMessages([ms.key]);
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Anyway-Md',
+                pack: 'Popkid-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -886,7 +886,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Popkid Md is Online 🕸\n\n");
+                console.log("P is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Popkid Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
@@ -925,12 +925,12 @@ zk.ev.on('group-participants.update', async (group) => {
  │  ᴘʀᴇғɪx : [ ${prefixe} ]
  │  ᴍᴏᴅᴇ : ${md}
  │  ᴘʟᴜɢɪɴs : 345
- │  ᴘʟᴀᴛғᴏʀᴍ : ᴄʜʀᴏᴍᴇ(ᴜʙᴜɴᴛᴜ)
- │  ᴅᴇᴠ : ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ 254 🇰🇪
+ │  ᴘʟᴀᴛғᴏʀᴍ : popkid
+ │  ᴅᴇᴠ : popkid_254 🇰🇪
  ╰─────────────────◆
 
 sᴜᴘᴘᴏʀᴛ ʙʏ sᴜʙsᴄʀɪʙɪɴɢ
-youtube.com/@popkid-254`;
+youtube.com/@popkid_254`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
@@ -1053,5 +1053,4 @@ youtube.com/@popkid-254`;
     });
     main();
 }, 5000);
-
 
