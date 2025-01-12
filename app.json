@@ -1,6 +1,6 @@
 {
-  "name": "🚮 POPKID-XTECH ❤️",
-  "description": "This BOT was developed by Popkid.",
+  "name": "🚮 POPKID XMD❤️",
+  "description": "This BOT was developed by POPKID.",
   "keywords": [
     "bot",
     "node",
@@ -27,7 +27,7 @@
       "value": "no",
       "required": false
     },
-    "AUTOREAD_MESSAGE": {
+    "AUTO_READ": {
       "description": "Your messages will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value": "no",
       "required": false
@@ -49,7 +49,7 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "POPKID-XTECH",
+      "value": "POPKID XMD",
       "required": false
     },
     "BOT_MENU_LINKS": {
@@ -80,7 +80,7 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "POPKID KE"
+      "value": "POPKID 😂"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
@@ -125,4 +125,3 @@
     }
   ]
     }
-
