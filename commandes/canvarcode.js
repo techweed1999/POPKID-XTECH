@@ -6,10 +6,10 @@ function delay(_0x25f170) {
   return new Promise(_0x529a1f => setTimeout(_0x529a1f, _0x25f170));
 }
 zokou({
-  'nomCom': "ping2",
+  'nomCom': "ping",
   'desc': "To check bot response time",
   'Categorie': "General",
-  'reaction': '🥂',
+  'reaction': '🔥',
   'fromMe': "true"
 }, async (_0x4cfdc6, _0x41d5d3, _0x546e3d) => {
   const {
@@ -34,7 +34,7 @@ zokou({
     'vcard': "BEGIN:VCARD\nVERSION:3.0\nFN:POPKID MD\nORG:POPKID MD Nexus;\nTEL;type=CELL;type=VOICE;waid=254111385747:+254 111 385 747\nEND:VCARD"
   };
   await _0x41d5d3.sendMessage(_0x4cfdc6, {
-    'text': "🛸 *POPKID MD* 🛸",
+    'text': "💀 *POPKID MD* 💀",
     'contextInfo': _0x41d2b1,
     'contacts': {
       'displayName': "POPKID MD Verified Contact",
@@ -45,10 +45,10 @@ zokou({
   console.log("Ping results sent successfully with contact and context info!");
 });
 zokou({
-  'nomCom': "uptime2",
+  'nomCom': "uptime",
   'desc': "To check runtime",
   'Categorie': "General",
-  'reaction': '😂˜',
+  'reaction': '🔥',
   'fromMe': "true"
 }, async (_0x205206, _0x161605, _0x2fdaee) => {
   const {
