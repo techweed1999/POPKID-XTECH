@@ -886,7 +886,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("P is Online 🕸\n\n");
+                console.log("Popkid is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Popkid Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
