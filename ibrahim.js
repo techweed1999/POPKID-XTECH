@@ -286,19 +286,6 @@ function mybotpic() {
             };
 
 
-// POPKID MD DID EVERYTHING ,,,DO NOT COPY ...
-if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
-const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
-         const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
-         zk.sendMessage(origineMessage, {
-             react: {
-                 text: emokis,
-                 key: ms.key
-             }
-         })
-     }
-//plz man, don't give my code to anyone!!! I trust you!
-
 
 if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGE === "yes") {
 
