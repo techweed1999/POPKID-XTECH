@@ -15,7 +15,7 @@ zokou ({
     nomFichier: __filename
 }, async (dest, zk, commandeOptions) => {
     const githubRepo = 'https://api.github.com/repos/Popkiddevs/X-TECH';
-    const img = 'https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg';
+    const img = 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg';
     const { repondre, auteurMessage } = commandeOptions;
 
     try {
@@ -38,7 +38,7 @@ zokou ({
 ║ 👻 𝐏𝐎𝐏𝐊𝐈𝐃 𝐗𝐓𝐄𝐂𝐇 𝐑𝐄𝐏𝐎 👻
 ╰───────────────━⊷
 ╭───────────────━⊷
-║💡 *ɴᴀᴍᴇ:* ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ
+║💡 *ɴᴀᴍᴇ:*ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ
 ║⭐ *ᴛᴏᴛᴀʟ sᴛᴀʀs:* ${repoInfo.stars}
 ║🍴 *ᴛᴏᴛᴀʟ ғᴏʀᴋs:* ${repoInfo.forks}
 ║👀 *ᴡᴀᴛᴄʜᴇʀs:* 32
@@ -47,11 +47,11 @@ zokou ({
 ╰───────────────━⊷
 ╭───────────────━⊷
 ║ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ : ${releaseDate}
-║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Popkiddevs/POPKID-XTECH
+║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Popkiddevs/X-TECH
 ╰───────────────━⊷
 
 _________________________________
-> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝 𝐒𝐦𝐚𝐫𝐭 𝐓𝐞𝐚𝐦`;
+> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝 𝐇𝐚𝐜𝐤𝐢𝐧𝐠 𝐓𝐞𝐚𝐦`;
 
             await zk.sendMessage(dest, { 
                 text: gitdata,
@@ -60,7 +60,7 @@ _________________________________
                     externalAdReply: {
                         title: " 𝐗𝐓𝐄𝐂𝐇 𝐑𝐄𝐏𝐎 𝐃𝐄𝐓𝐀𝐈𝐋𝐒",
                         body: "𝐓𝐚𝐩 𝐇𝐞𝐫𝐞 𝐭𝐨 𝐟𝐨𝐥𝐥𝐨𝐰 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐟𝐨𝐫 𝐮𝐩𝐝𝐚𝐭𝐞𝐬",
-                        thumbnailUrl: "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
+                        thumbnailUrl: "https://telegra.ph/file/15b6bb18be046cceae5c7.jpg",
                         sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l',
                         mediaType: 1,
                         renderLargerThumbnail: true
@@ -85,7 +85,7 @@ zokou ({
     nomFichier: __filename
 }, async (dest, zk, commandeOptions) => {
     const githubRepo = 'https://api.github.com/repos/Popkiddevs/X-TECH';
-    const img = 'https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg';
+    const img = 'https://telegra.ph/file/15b6bb18be046cceae5c7.jpg';
     const { repondre, auteurMessage } = commandeOptions;
 
     try {
@@ -108,7 +108,7 @@ zokou ({
 ║ 👻 𝐏𝐎𝐏𝐊𝐈𝐃 𝐗𝐓𝐄𝐂𝐇 𝐑𝐄𝐏𝐎 👻
 ╰───────────────━⊷
 ╭───────────────━⊷
-║💡 *ɴᴀᴍᴇ:* ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ
+║💡 *ɴᴀᴍᴇ:*ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ
 ║⭐ *ᴛᴏᴛᴀʟ sᴛᴀʀs:* ${repoInfo.stars}
 ║🍴 *ᴛᴏᴛᴀʟ ғᴏʀᴋs:* ${repoInfo.forks}
 ║👀 *ᴡᴀᴛᴄʜᴇʀs:* 32
@@ -121,7 +121,7 @@ zokou ({
 ╰───────────────━⊷
 
 _________________________________
-> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝 𝐒𝐦𝐚𝐫𝐭 𝐓𝐞𝐚𝐦`;
+> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝 𝐇𝐚𝐜𝐤𝐢𝐧𝐠 𝐓𝐞𝐚𝐦`;
 
             await zk.sendMessage(dest, { 
                 text: gitdata,
@@ -130,7 +130,7 @@ _________________________________
                     externalAdReply: {
                         title: " 𝐗𝐓𝐄𝐂𝐇 𝐑𝐄𝐏𝐎 𝐃𝐄𝐓𝐀𝐈𝐋𝐒",
                         body: "𝐓𝐚𝐩 𝐇𝐞𝐫𝐞 𝐭𝐨 𝐟𝐨𝐥𝐥𝐨𝐰 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐟𝐨𝐫 𝐮𝐩𝐝𝐚𝐭𝐞𝐬",
-                        thumbnailUrl: "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
+                        thumbnailUrl: "https://telegra.ph/file/15b6bb18be046cceae5c7.jpg",
                         sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l',
                         mediaType: 1,
                         renderLargerThumbnail: true
@@ -155,7 +155,7 @@ zokou ({
     nomFichier: __filename
 }, async (dest, zk, commandeOptions) => {
     const githubRepo = 'https://api.github.com/repos/Popkiddevs/X-TECH';
-    const img = 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg';
+    const img = 'https://telegra.ph/file/15b6bb18be046cceae5c7.jpg';
     const { repondre, auteurMessage } = commandeOptions;
 
     try {
@@ -178,7 +178,7 @@ zokou ({
 ║ 👻 𝐏𝐎𝐏𝐊𝐈𝐃 𝐗𝐓𝐄𝐂𝐇 𝐑𝐄𝐏𝐎  👻
 ╰───────────────━⊷
 ╭───────────────━⊷
-║💡 *ɴᴀᴍᴇ:* ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ
+║💡 *ɴᴀᴍᴇ:*ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ
 ║⭐ *ᴛᴏᴛᴀʟ sᴛᴀʀs:* ${repoInfo.stars}
 ║🍴 *ᴛᴏᴛᴀʟ ғᴏʀᴋs:* ${repoInfo.forks}
 ║👀 *ᴡᴀᴛᴄʜᴇʀs:* 32
@@ -191,7 +191,7 @@ zokou ({
 ╰───────────────━⊷
 
 _________________________________
-> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝 𝐒𝐦𝐚𝐫𝐭 𝐓𝐞𝐚𝐦`;
+> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝 𝐇𝐚𝐜𝐤𝐢𝐧𝐠 𝐓𝐞𝐚𝐦`;
 
             await zk.sendMessage(dest, { 
                 text: gitdata,
@@ -200,7 +200,7 @@ _________________________________
                     externalAdReply: {
                         title: " 𝐗𝐓𝐄𝐂𝐇 𝐑𝐄𝐏𝐎 𝐃𝐄𝐓𝐀𝐈𝐋𝐒",
                         body: "𝐓𝐚𝐩 𝐇𝐞𝐫𝐞 𝐭𝐨 𝐟𝐨𝐥𝐥𝐨𝐰 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐟𝐨𝐫 𝐮𝐩𝐝𝐚𝐭𝐞𝐬",
-                        thumbnailUrl: "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
+                        thumbnailUrl: "https://telegra.ph/file/15b6bb18be046cceae5c7.jpg",
                         sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l',
                         mediaType: 1,
                         renderLargerThumbnail: true
