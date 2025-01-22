@@ -1,9 +1,9 @@
-// this is popkid nuhh😂😂
+// this is popkid shit nuhh😂😂
 //get the fuck outa here
 
 const axios = require("axios");
-const { zokou } = require(__dirname + "/../keizzah/keith");
-const { format } = require(__dirname + "/../keizzah/mesfonctions");
+const { zokou } = require(__dirname + "/../framework/zokou");
+const { format } = require(__dirname + "/../framework/mesfonctions");
 const os = require('os');
 const moment = require("moment-timezone");
 const settings = require(__dirname + "/../set");
@@ -108,7 +108,7 @@ const getRandomQuote = () => {
     return quotes[randomIndex];
 };
 
-// popkid command handler for 'menu3' command
+// Keith command handler for 'menu3' command
 keith({ nomCom: "menu", aliases: ["liste", "helplist", "commandlist"], categorie: "SYSTEM" }, async (message, client, config) => {
     const { ms, respond, prefix, nomAuteurMessage } = config;
     const commands = require(__dirname + "/../keizzah/keith").cm;
@@ -148,7 +148,7 @@ keith({ nomCom: "menu", aliases: ["liste", "helplist", "commandlist"], categorie
 *Be motivated with this inspiration quote🫧*   
 "💎${randomQuote}💎"
 
-╭━━━ 〔 𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 〕━━━┈⊷
+╭━━━ 〔 𝐏𝐎𝐏𝐊𝐈𝐃 𝐗𝐓𝐄𝐂𝐇 〕━━━┈⊷
 ┃✵╭───────────────
 ┃✵│▸ *ʙᴏᴛ ᴏᴡɴᴇʀ:* ${settings.OWNER_NAME}
 ┃✵│▸ *ᴘʀᴇғɪx:* *[ ${settings.PREFIXE} ]*
@@ -183,7 +183,7 @@ keith({ nomCom: "menu", aliases: ["liste", "helplist", "commandlist"], categorie
         commandsList += "\n│◦➛╰─────────────\n╰──────────────┈⊷\n";
     }
 
-    commandsList += readMore + "\nin honor of Alpha\n";
+    commandsList += readMore + "\nPOWERED BY POPKID\n";
 
     // Send message
     try {
@@ -193,9 +193,9 @@ keith({ nomCom: "menu", aliases: ["liste", "helplist", "commandlist"], categorie
             contextInfo: {
                 mentionedJid: [senderName],
                 externalAdReply: {
-                    title: "🌟𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗✨",
+                    title: "🌟𝐏𝐎𝐏𝐊𝐈𝐃-𝗫𝐓𝐄𝐂𝐇✨",
                     body: "POWERED BY POPKID",
-                    thumbnailUrl: "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
+                    thumbnailUrl: "https://files.catbox.moe/yedfbr.jpg",
                     sourceUrl: "https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l",
                     mediaType: 1,
                     renderLargerThumbnail: true
