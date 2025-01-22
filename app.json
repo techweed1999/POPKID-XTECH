@@ -1,6 +1,6 @@
 {
-  "name": "🚮 POPKID XMD❤️",
-  "description": "This BOT was developed by POPKID.",
+  "name": "⭕ 𝐏𝐎𝐏𝐊𝐈𝐃 𝐗𝐁𝐎𝐓 ⭕",
+  "description": "This BOT was developed by Popkid Tech 👻.",
   "keywords": [
     "bot",
     "node",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-  "repository": "https://github.com/Popkiddevs/POPKID-XTECH",
+  "repository": "https://github.com/Popkiddevs/X-TECH",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -22,26 +22,61 @@
       "value": "yes",
       "required": false
     },
+    "AUTO_REPLY": {
+      "description": "Your contact messages will be replied automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+      "value": "no",
+      "required": false
+          },
+    "ANTIVV": {
+      "description": "Detect all view once media and send them to your dm",
+      "value": "yes",
+      "required": false
+    },
+    "AUTO_BIO": {
+      "description": "Set live time bio.",
+      "value": "yes",
+      "required": false
+    },
+    "AUTO_SAVE_CONTACTS": {
+      "description": "Your contacts will be saved automatically. ",
+      "value": "yes",
+      "required": false
+    },
+    "ANTIDELETEDM": {
+      "description": "deleted messages will be detected lively.and sent directly after deletion",
+      "value": "yes",
+      "required": false
+    },
     "AUTO_DOWNLOAD_STATUS": {
       "description": "Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
       "value": "no",
       "required": false
     },
-    "AUTO_READ": {
-      "description": "Your messages will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+    "AUTOREAD_MESSAGE": {
+      "description": "Show bluetick after message is received.(type yes to active or no to deactive  ; don't write in capital letter)",
       "value": "no",
       "required": false
     },
+    "ANTILINK" : {
+      "description" : "detect links and remove link senders to group", 
+      "value" : "yes", 
+      "required" : false
+     }, 
     "ANTICALL": {
       "description": "no calls on WhatsApp...reject automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value": "no",
       "required": false
-    },
+     }, 
       "AUTO_REACT_STATUS": {
-      "description":"Enter yes for your bot to auto react status",
-      "value":"yes",
-      "required":false
+      "description": "Your friend's status will be liked automatically",
+      "value": "yes",
+      "required": false
     },
+    "CHAT_BOT" : {
+      "description" : "active bot to reply all messages received in pm", 
+      "value" : "no", 
+     "required" :false
+     }, 
     "PM_PERMIT": {
       "description": "Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
       "value": "no",
@@ -49,13 +84,9 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "POPKID XMD",
+      "value": "POPKID-MD",
       "required": false
-    },
-    "BOT_MENU_LINKS": {
-      "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-      "required": false
+  
     },
     "PUBLIC_MODE": {
       "description": "type yes to put your bot on public mode or no to put it on private mod",
@@ -64,7 +95,7 @@
     },
     "HEROKU_APY_KEY": {
       "description": "insert your heroku api-key (OPTIONAL)",
-      "value" : "HRKU-6650b52e-9f81-4eda-8a1e-bfb12a79dd09", 
+      "value" : "", 
       "required": false
     },
     "HEROKU_APP_NAME": {
@@ -80,10 +111,10 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "𝗣𝗢𝗣𝗞𝗜𝗗-𝗞𝗘"
+      "value": "𝐏𝐨𝐩𝐤𝐢𝐝 𝐤𝐞"
     },
     "NUMERO_OWNER": {
-      "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
+      "desc": "Your number , dont put '+' and put you area code(exemple '254')",
       "required": false,
       "value": "254111385747"
     },
@@ -95,22 +126,22 @@
     "STARTING_BOT_MESSAGE": {
       "description": "if you don't want startting-bot-message put no else put yes",
       "required": true,
-      "value": "yes"
+      "value": "no"
     },
     "PRESENCE": {
       "description": "Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
       "value": "",
       "required": false
     },
-    "ANTI_DELETE_MESSAGE": {
-      "description": "if you want to enable anti delete message put yes else put no",
+    "ADMGROUP": {
+      "description": "deleted messages will be detected on live chat",
       "value": "yes",
       "required": false
     },
     "AUTO_REACTION": {
-      "description": "Put yes if you want the bot to react to messages in private",
+      "description": "reaction with different emojis(IF YOU NEED THIS, SET BELTAH_REACT TO no, ELSE IT WON'T WORK) ",
       "required": false,
-      "value": "yes"
+      "value": "no"
     }
   },
   "formation": {
