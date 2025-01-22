@@ -47,7 +47,7 @@ zokou ({
 ╰───────────────━⊷
 ╭───────────────━⊷
 ║ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ : ${releaseDate}
-║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Popkiddevs/X-TECH
+║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Popkiddevs/POPKID-XTECH
 ╰───────────────━⊷
 
 _________________________________
