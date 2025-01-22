@@ -14,7 +14,7 @@ zokou ({
     reaction: "👻",
     nomFichier: __filename
 }, async (dest, zk, commandeOptions) => {
-    const githubRepo = 'https://api.github.com/repos/Popkiddevs/X-TECH';
+    const githubRepo = 'https://api.github.com/repos/Popkiddevs/POPKID-XTECH';
     const img = 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg';
     const { repondre, auteurMessage } = commandeOptions;
 
