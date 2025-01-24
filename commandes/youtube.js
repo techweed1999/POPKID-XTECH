@@ -8,7 +8,7 @@ zokou({
   nomCom: "video",
   aliases: ["musicvid", "ytmp4", "luckyvideo", "mp4"],
   categorie: "Search",
-  reaction: "📺"
+  reaction: "💝"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
@@ -74,7 +74,7 @@ zokou({
           title: videoDetails.title,
           body: videoDetails.title,
           mediaType: 1,
-          sourceUrl: 'https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f',
+          sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l',
           thumbnailUrl: firstVideo.thumbnail,
           renderLargerThumbnail: false,
           showAdAttribution: true,
