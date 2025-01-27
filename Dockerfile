@@ -12,7 +12,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/SIMON32883/MR-ANYWAY-MD  /root/ToshTech
+RUN git clone https://github.com/Popkiddevs/POPKID-XTECH  /root/ToshTech
 WORKDIR /root/toshtech/
 
 
@@ -24,4 +24,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run" , "ibrahim.js"]
+CMD ["npm", "run" , "popkid.js"]
