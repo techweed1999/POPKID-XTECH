@@ -7,7 +7,7 @@
     "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node beltah.js", 
+    "s": "node popkid.js", 
     "zokou": "pm2 start popkid.js --attach --max-memory-restart 490M",
     "alpha": "pm2 start ian.js --attach",
     "c": "tsc"
