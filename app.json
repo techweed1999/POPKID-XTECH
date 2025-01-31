@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-  "repository": "https://github.com/Popkiddevs/X-TECH",
+  "repository": "https://github.com/Popkiddevs/POPKID-XTECH",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -90,7 +90,7 @@
     },
     "PUBLIC_MODE": {
       "description": "type yes to put your bot on public mode or no to put it on private mod",
-      "value": "yes",
+      "value": "no",
       "required": false 
     },
     "HEROKU_APY_KEY": {
@@ -130,7 +130,7 @@
     },
     "PRESENCE": {
       "description": "Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-      "value": "",
+      "value": "3",
       "required": false
     },
     "ADMGROUP": {
@@ -139,7 +139,7 @@
       "required": false
     },
     "AUTO_REACTION": {
-      "description": "reaction with different emojis(IF YOU NEED THIS, SET BELTAH_REACT TO no, ELSE IT WON'T WORK) ",
+      "description": "reaction with different emojis(IF YOU NEED THIS, SET POPKID_REACT TO no, ELSE IT WON'T WORK) ",
       "required": false,
       "value": "no"
     }
