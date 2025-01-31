@@ -424,7 +424,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "🦋",
+                                text: "🐇",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
@@ -1355,21 +1355,15 @@ zk.ev.on('group-participants.update', async (group) => {
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `*Hello👋, ${getGreeting()},*
-╭════⊷
-║ *Popkid Xbot is Connected*
-║    Prefix : [  ${prefixe} ]
-║    Mode : ${md} mode
-║    platform : Chrome Linux 
-║    Total Commands : ${evt.cm.length}
-╰═════════════════⊷
+                let cmsg = `ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ
 
-╭───◇
-┃
-┃ *Thank you for choosing*                      
-┃  *POPKID XBOT*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ 😇 
-╰═════════════════⊷ `;
+ᴍᴏᴅᴇ :${md}
+ᴘʀᴇғɪx : [ ${prefixe} ]
+ᴘʟᴜɢɪɴs :456
+ᴅᴇᴠᴇʟᴏᴘᴇʀ : ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ 👻
+
+ᴡᴀᴛᴄʜ ᴀʟʟ ᴛᴜᴛᴏʀɪᴀʟs
+youtube.com/@Popkid2024`;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
