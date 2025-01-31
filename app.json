@@ -7,7 +7,7 @@
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
+  "logo": "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
   "repository": "https://github.com/Popkiddevs/POPKID-XTECH",
   "succes_url": "/",
   "stack": "container",
@@ -90,7 +90,7 @@
     },
     "PUBLIC_MODE": {
       "description": "type yes to put your bot on public mode or no to put it on private mod",
-      "value": "no",
+      "value": "yes",
       "required": false 
     },
     "HEROKU_APY_KEY": {
@@ -116,7 +116,7 @@
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple '254')",
       "required": false,
-      "value": "254111385747"
+      "value": "254732297194"
     },
     "WARN_COUNT": {
       "desc": "this is the limit of warn for warning commandes",
@@ -130,7 +130,7 @@
     },
     "PRESENCE": {
       "description": "Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-      "value": "3",
+      "value": "",
       "required": false
     },
     "ADMGROUP": {
