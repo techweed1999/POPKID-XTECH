@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Popkiddevs/POPKID-XTECH  /root/ToshTech
-WORKDIR /root/toshtech/
+RUN git clone https://github.com/Popkiddevs/POPKID-XTECH  /root/Popkid
+WORKDIR /root/popkid/
 
 
 COPY package.json .
@@ -21,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run" , "alpha"]
+CMD ["npm", "run" , "popkid.js"]
