@@ -11,7 +11,7 @@
     "test": "node popkid.js",
     "s": "node popkid.js",
     "toshtech": "pm2 start popkid.js --attach",
-    "alpha": "pm2 start ian.js --attach",
+    "toshtech": "pm2 start ian.js --attach",
     "c": "tsc"
   },
   "keywords": [
