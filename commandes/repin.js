@@ -1,207 +1,92 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function _0x2670(_0x5c5200,_0x32c412){const _0x8bb983=_0x8bb9();return _0x2670=function(_0x2670d6,_0x212cef){_0x2670d6=_0x2670d6-0x140;let _0x769225=_0x8bb983[_0x2670d6];return _0x769225;},_0x2670(_0x5c5200,_0x32c412);}const _0x1188db=_0x2670;function _0x8bb9(){const _0x1dce14=['*Hello\x20There\x20POPKID\x20W.A\x20BOT\x20User!\x20😄👋*\x20\x0a\x0a>\x20Simple,\x20Icy,\x20Cold\x20\x20&\x20Rich\x20Loaded\x20Bot\x20With\x20Amazing\x20Features,\x20Popkid\x20WhatsApp\x20Bot.\x20❄️\x0a\x0a*Thanks\x20for\x20using\x20Popkid\x20MD🌹🫶*\x20\x0a\x0a>\x20Don\x27t\x20forget\x20to\x20star\x20&\x20fork\x20the\x20repo🌟🍴\x0a\x0ahttps://github.com/Popkiddevs/POPKID-XTECH','repo1','audio/mp4','script','6352100HuHVBg','16MyRyGi','log','120363304325601080@newsletter','6ztDjDi','Hello\x20World!','366nHCfcJ','🗂️','info','https://github.com/mrfrank-ofc/SUBZERO-MD-DATABASE/raw/refs/heads/main/audios/subzero-yali.mp3','Info\x20about\x20the\x20bot\x20repository','sender','576951xFMEbw','752609ouBMOR','143610ObVMeo','97580XfbYUx','../command','3364MpVTSO','3639213HrsTfy','sendMessage','685mqeTtu','『\x20ᴘᴏᴘᴋɪᴅ\x20ᴍᴅ\x20』'];_0x8bb9=function(){return _0x1dce14;};return _0x8bb9();}(function(_0x2dca43,_0x345715){const _0x4565e2=_0x2670,_0x323d4b=_0x2dca43();while(!![]){try{const _0x311a5a=-parseInt(_0x4565e2(0x155))/0x1+parseInt(_0x4565e2(0x157))/0x2*(-parseInt(_0x4565e2(0x14d))/0x3)+-parseInt(_0x4565e2(0x140))/0x4*(-parseInt(_0x4565e2(0x143))/0x5)+-parseInt(_0x4565e2(0x14f))/0x6*(-parseInt(_0x4565e2(0x158))/0x7)+parseInt(_0x4565e2(0x14a))/0x8*(parseInt(_0x4565e2(0x141))/0x9)+-parseInt(_0x4565e2(0x149))/0xa+parseInt(_0x4565e2(0x156))/0xb;if(_0x311a5a===_0x345715)break;else _0x323d4b['push'](_0x323d4b['shift']());}catch(_0x3cda68){_0x323d4b['push'](_0x323d4b['shift']());}}}(_0x8bb9,0x76e07));function hi(){const _0x32cd3b=_0x2670;console[_0x32cd3b(0x14b)](_0x32cd3b(0x14e));}hi();function hi(){const _0x10baab=_0x2670;console[_0x10baab(0x14b)](_0x10baab(0x14e));}hi();const {cmd,commands}=require(_0x1188db(0x159));cmd({'pattern':_0x1188db(0x146),'alias':['sc',_0x1188db(0x148),_0x1188db(0x151)],'desc':_0x1188db(0x153),'category':'main','react':_0x1188db(0x150),'filename':__filename},async(_0x3971cd,_0xcb4fa5,_0x20f089,{from:_0x19995a,quoted:_0x742871,body:_0x57816e,isCmd:_0x205269,command:_0x1d2284,args:_0x12b9c2,q:_0x530a94,isGroup:_0x123847,sender:_0x1ed810,senderNumber:_0x146fff,botNumber2:_0x4cc94f,botNumber:_0x482c07,pushname:_0x35213c,isMe:_0x34969f,isOwner:_0x895177,groupMetadata:_0x14ccaf,groupName:_0x3468fc,participants:_0x55bede,groupAdmins:_0x20e822,isBotAdmins:_0x555436,isAdmins:_0x26bca2,reply:_0xcbbddf})=>{const _0x28fb3e=_0x1188db;try{await _0x3971cd[_0x28fb3e(0x142)](_0x19995a,{'image':{'url':'https://i.postimg.cc/7hL6R7NH/White-and-Green-Simple-Professional-Business-Project-Presentation-1.jpg'},'caption':_0x28fb3e(0x145),'contextInfo':{'mentionedJid':[_0x20f089[_0x28fb3e(0x154)]],'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x28fb3e(0x14c),'newsletterName':_0x28fb3e(0x144),'serverMessageId':0x8f}}},{'quoted':_0xcb4fa5}),await _0x3971cd[_0x28fb3e(0x142)](_0x19995a,{'audio':{'url':_0x28fb3e(0x152)},'mimetype':_0x28fb3e(0x147),'ptt':!![]},{'quoted':_0xcb4fa5});}catch(_0x3a9329){console['log'](_0x3a9329),_0xcbbddf(''+_0x3a9329);}});
+const { zokou } = require("../framework/zokou");
+const axios = require('axios');
+const ytSearch = require('yt-search');
+
+// Define the command with aliases
+zokou({
+  nomCom: "popkidvideo",
+  aliases: ["musicvideodoc", "ytmp4doc", "luckyvideodoc", "mp4doc"],
+  categorie: "Search",
+  reaction: "📺"
+}, async (dest, zk, commandOptions) => {
+  const { arg, ms, repondre } = commandOptions;
+
+  // Check if a query is provided
+  if (!arg[0]) {
+    return repondre("Please provide a video document name.");
+  }
+
+  const query = arg.join(" ");
+
+  try {
+    // Perform a YouTube search based on the query
+    const searchResults = await ytSearch(query);
+
+    // Check if any videos were found
+    if (!searchResults || !searchResults.videos.length) {
+      return repondre('No video document found for the specified query.');
+    }
+
+    const firstVideo = searchResults.videos[0];
+    const videoUrl = firstVideo.url;
+
+    // Function to get download data from APIs
+    const getDownloadData = async (url) => {
+      try {
+        const response = await axios.get(url);
+        return response.data;
+      } catch (error) {
+        console.error('Error fetching data from API:', error);
+        return { success: false };
+      }
+    };
+
+    // List of APIs to try
+    const apis = [
+      `https://api-rin-tohsaka.vercel.app/download/ytmp4?url=${encodeURIComponent(videoUrl)}`,
+      `https://api.davidcyriltech.my.id/download/ytmp3?url=${encodeURIComponent(videoUrl)}`,
+      `https://www.dark-yasiya-api.site/download/ytmp3?url=${encodeURIComponent(videoUrl)}`,
+      `https://api.giftedtech.web.id/api/download/dlmp3?url=${encodeURIComponent(videoUrl)}&apikey=gifted-md`,
+      `https://api.dreaded.site/api/ytdl/audio?url=${encodeURIComponent(videoUrl)}`
+    ];
+
+    let downloadData;
+    for (const api of apis) {
+      downloadData = await getDownloadData(api);
+      if (downloadData && downloadData.success) break;
+    }
+
+    // Check if a valid download URL was found
+    if (!downloadData || !downloadData.success) {
+      return repondre('Failed to retrieve download URL from all sources. Please try again later.');
+    }
+
+    const downloadUrl = downloadData.result.download_url;
+    const videoDetails = downloadData.result;
+
+    // Prepare the message payload with external ad details
+    const messagePayload = {
+      document: { url: downloadUrl },
+      mimetype: 'video/mp4',
+      contextInfo: {
+        externalAdReply: {
+          title: "ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ ᴍᴘ4 ᴘʟᴀʏᴇʀ" ,
+          body: videoDetails.title,
+          mediaType: 1,
+          sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l',
+          thumbnailUrl: "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg" ,
+          renderLargerThumbnail: false,
+          showAdAttribution: true,
+        },
+      },
+    };
+
+    // Send the download link to the user
+    await zk.sendMessage(dest, messagePayload, { quoted: ms });
+
+  } catch (error) {
+    console.error('Error during download process:', error);
+    return repondre(`Download failed due to an error: ${error.message || error}`);
+  }
+});
