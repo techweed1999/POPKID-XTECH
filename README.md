@@ -21,7 +21,7 @@
 
 # ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ
 </a></p>
-- <a href="https://popkid-pairingcode.onrender.com"><img title="GET SESSION ID HERE" src="https://img.shields.io/badge/SCAN CODE HERE-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/></a></p>
+- <a href="https://popkidsessions-81385f9eef0e.herokuapp.com/"><img title="GET SESSION ID HERE" src="https://img.shields.io/badge/SCAN CODE HERE-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/></a></p>
 
 # ᴄʀᴇᴀᴛᴇ ʜᴇʀᴏᴋᴜ
 
