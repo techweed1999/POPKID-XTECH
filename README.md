@@ -21,7 +21,7 @@
 
 # ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ
 </a></p>
-- <a href="https://popkiddevs.github.io/stylish/"><img title="TAP FOR SESSION ID" src="https://img.shields.io/badge/SCAN CODE HERE-h?color=rgb(0, 255, 255)&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/></a></p>
+- <a href="https://popkiddevs.github.io/stylish/"><img title="TAP FOR SESSION ID" src="https://img.shields.io/badge/ᴛᴀᴘ ʜᴇʀᴇ ғᴏʀ sᴇssɪᴏɴ ɪᴅ-h?color=pink&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/></a></p>
 
 # ᴄʀᴇᴀᴛᴇ ʜᴇʀᴏᴋᴜ
 
