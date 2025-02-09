@@ -1170,7 +1170,7 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg';
+        ppgroup = 'https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg';
     }
 
     try {
