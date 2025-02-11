@@ -2056,7 +2056,8 @@ zk.ev.on('group-participants.update', async (group) => {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch (error) {
         // Fallback if profile picture URL is not available
-        ppgroup = 'https://files.catbox.moe/aqjm03.jpg';
+        ppgroup = 'https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg">
+ ';
     }
 
     try {
@@ -2082,7 +2083,7 @@ zk.ev.on('group-participants.update', async (group) => {
 ║  *ғᴏʟʟᴏᴡ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ*
 ║  *ғᴏʀ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs*
 ║ ~ᴛᴀᴘ ᴏɴ ᴛʜᴇ ʟɪɴᴋ~
-║ https://shorturl.at/E0jGI
+║ https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
 ╰──────────━⊷`;
 
             // Send welcome message with the group profile picture
@@ -2118,7 +2119,7 @@ let msg = `
 ║  *ғᴏʟʟᴏᴡ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ*
 ║  *ғᴏʀ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs*
 ║ ~ᴛᴀᴘ ᴏɴ ᴛʜᴇ ʟɪɴᴋ~
-║ https://shorturl.at/E0jGI
+║ https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
 ╰──────────━⊷`;
 
             // Send goodbye message with mentions
@@ -2301,7 +2302,7 @@ if ((conf.DP).toLowerCase() === 'yes') {
 ║ ʙᴏᴛ ɴᴀᴍᴇ: ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ
 ╭────────────━⊷
 🌐 ᴛᴀᴘ ᴏɴ ᴛʜᴇ ʟɪɴᴋ ʙᴇʟᴏᴡ ᴛᴏ ғᴏʟʟᴏᴡ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ
-> https://shorturl.at/z3b8v
+> https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
 ╰────────────━⊷
 > ᴘᴏᴘᴋɪᴅ
 
