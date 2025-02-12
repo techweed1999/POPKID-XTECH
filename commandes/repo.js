@@ -49,7 +49,8 @@ https://youtube.com/@Popkid_254
 > https://wa.me/+254111385747
 *WHATSAPP CHANNEL*
 > https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
-
+*BACKUP CHANNEL*
+> https://whatsapp.com/channel/0029Vb11OEh4yltSrUQ3Gw2x
 *FOR MORE INFO TAP ON THE LINK BELOW*
 > https://github.com/Popkiddevs/POPKID-XTECH
 ╭──━━━━═════════━━━━⦿
