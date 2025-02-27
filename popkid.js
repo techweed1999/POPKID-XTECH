@@ -1355,15 +1355,22 @@ zk.ev.on('group-participants.update', async (group) => {
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ
+                let cmsg = `╭════⊷
+║ *『𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 is CONNECTED』*
+║    Creator: *Popkid*
+║    Prefix : [ ${prefixe} ]
+║    Mode :${md}
+║    Total Commands : ${evt.cm.length}︎
+╰═════════════════⊷
 
-ᴍᴏᴅᴇ :${md}
-ᴘʀᴇғɪx : [ ${prefixe} ]
-ᴘʟᴜɢɪɴs :456
-ᴅᴇᴠᴇʟᴏᴘᴇʀ : ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ 👻
-
-ᴡᴀᴛᴄʜ ᴀʟʟ ᴛᴜᴛᴏʀɪᴀʟs
-youtube.com/@Popkid2024`;
+╭───◇
+┃ 
+┃
+┃ *Thank you for choosing 𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃*
+┃
+┃
+┃ Join The Official WhatsApp channel https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
+╰═════════════════⊷`;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
