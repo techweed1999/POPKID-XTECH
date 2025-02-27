@@ -424,7 +424,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "🐇",
+                                text: "❤️",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
