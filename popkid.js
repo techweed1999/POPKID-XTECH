@@ -81,7 +81,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['BELTAH-MD', "safari", "1.0.0"],
+            browser: ['POPKID-MD', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -424,7 +424,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "❤️",
+                                text: "🐇",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
@@ -1355,21 +1355,17 @@ zk.ev.on('group-participants.update', async (group) => {
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `*Hello👋, ${getGreeting()},*
-╭════⊷
-║ *Popkid Xtech is Connected*
-║    Prefix : [  ${prefixe} ]
-║    Mode : ${md} mode
-║    platform : Chrome Linux 
-║    Total Commands : ${evt.cm.length}
-╰═════════════════⊷
-
-╭───◇
-┃
-┃ *Thank you for choosing*                      
-┃  *POPKID TECH*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ 👻 
-╰═════════════════⊷ `;
+                let cmsg = `╔════◇
+    ║ 『𝐏𝐎𝐏𝐊𝐈𝐃 𝐗𝐓𝐄𝐂𝐇』
+    ║    Prefix : [ ${prefixe} ]
+    ║    Mode :${md}
+    ║    Commands : ${evt.cm.length}︎
+    ╚══════════════════╝
+    
+    ╔═════◇
+    ║『𝗯𝘆 𝗽𝗼𝗽𝗸𝗶𝗱』
+    ║ 
+    ╚══════════════════╝`;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
