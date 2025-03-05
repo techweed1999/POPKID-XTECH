@@ -1,10 +1,10 @@
 const { zokou } = require('../framework/zokou');
 const axios = require("axios")
 let { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
-const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("../lib/banUser");
-const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("../lib/banGroup");
-const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("../lib/onlyAdmin");
-const {removeSudoNumber,addSudoNumber,issudo} = require("../lib/sudo");
+const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("../bdd/banUser");
+const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("../bdd/banGroup");
+const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("../bdd/onlyAdmin");
+const {removeSudoNumber,addSudoNumber,issudo} = require("../bdd/sudo");
 //const conf = require("../set");
 //const fs = require('fs');
 const sleep =  (ms) =>{
@@ -13,7 +13,7 @@ const sleep =  (ms) =>{
   } ;
 
 
-  adams({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+  zokou({ nomCom: "telesticker", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
     const { ms, repondre, arg, nomAuteurMessage, superUser } = commandeOptions;
   
     if (!superUser) {
@@ -24,7 +24,7 @@ const sleep =  (ms) =>{
    // if (apikey === null || apikey === 'null') { repondre('Veillez vérifier votre apikey ou si vous en avez pas , veiller crée un compte sur api.lolhuman.xyz et vous en procurer une.'); return; };
   
     if (!arg[0]) {
-      repondre("put a telegramme stickers link ");
+      repondre("put a telegram sticker link ");
       return;
     }
   
@@ -32,7 +32,7 @@ const sleep =  (ms) =>{
   
     let name = lien.split('/addstickers/')[1] ;
   
-    let api = 'https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=' + encodeURIComponent(name) ;
+    let api = 'https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=' + encodeURIComponent(packname) ;
   
     try {
   
@@ -47,7 +47,7 @@ const sleep =  (ms) =>{
         type = 'not animated sticker'
       }
   
-      let msg = `   Popkid-md-stickers-dl
+      let msg = `   Popkid-stickers-dl
       
   *Name :* ${stickers.data.result.name}
   *Type :* ${type} 
@@ -70,7 +70,7 @@ const sleep =  (ms) =>{
   
           const sticker = new Sticker(buffer.data, {
             pack: nomAuteurMessage,
-            author: "Popkid-md",
+            author: "POPKID-MD",
             type: StickerTypes.FULL,
             categories: ['🤩', '🎉'],
             id: '12345',
@@ -94,7 +94,7 @@ const sleep =  (ms) =>{
     }
   });
 
-adams({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg, auteurMessage, superUser, auteurMsgRepondu, msgRepondu } = commandeOptions;
 
   if (!superUser) { repondre("only modds can use this command"); return };
@@ -110,7 +110,7 @@ adams({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 
 });
 
-adams({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
   if (!verifGroupe) { repondre("group only"); return };
@@ -122,7 +122,7 @@ adams({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) =
   await zk.groupLeave(dest)
 });
 
-adams({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
 
@@ -140,7 +140,7 @@ adams({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 })
 
 
-adams({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
@@ -159,7 +159,7 @@ adams({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) =>
 
   
 
-adams({ nomCom: "block", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "block", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
@@ -183,7 +183,7 @@ adams({ nomCom: "block", categorie: "Mods" }, async (dest, zk, commandeOptions) 
 
   });
 
-adams({ nomCom: "unblock", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "unblock", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
@@ -206,7 +206,7 @@ adams({ nomCom: "unblock", categorie: "Mods" }, async (dest, zk, commandeOptions
   
     });
 
-adams({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
 
   const { auteurMessage ,ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser,prefixe } = commandeOptions
 
@@ -241,7 +241,7 @@ await zk.groupParticipantsUpdate(
 }
 });
 
-adams({
+zokou({
     nomCom: 'ban',
     categorie: 'Mods',
 }, async (dest, zk, commandeOptions) => {
@@ -290,7 +290,7 @@ adams({
 
 
 
-adams({
+zokou({
     nomCom: 'bangroup',
     categorie: 'Mods',
 }, async (dest, zk, commandeOptions) => {
@@ -338,7 +338,7 @@ adams({
 });
 
 
-adams({
+zokou({
   nomCom: 'onlyadmin',
   categorie: 'Group',
 }, async (dest, zk, commandeOptions) => {
@@ -385,7 +385,7 @@ if(!verifGroupe) {repondre('order reservation for groups' ) ; return };
 } else { repondre('You are not entitled to this order')}
 });
 
-adams({
+zokou({
   nomCom: 'sudo',
   categorie: 'Mods',
 }, async (dest, zk, commandeOptions) => {
@@ -434,7 +434,7 @@ if (!superUser) {repondre('This command is only allowed to the bot owner') ; ret
 });
 
 
-adams({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { repondre , msgRepondu , superUser, auteurMessage } = commandeOptions;
   
@@ -487,7 +487,7 @@ adams({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) =
           let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
   
           let stickerMess = new Sticker(media, {
-            pack: 'POPKID-MD-TAG',
+            pack: 'POPKID-MD',
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -518,7 +518,7 @@ adams({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 ;
 
 
-adams({
+zokou({
   nomCom : 'mention',
   categorie : 'Mods',
 } , async (dest,zk,commandeOptions) => {
@@ -539,7 +539,7 @@ adams({
 
   if (alldata.length === 0 ) { repondre(`To activate or modify the mention; follow this syntax: mention link type message
   The different types are audio, video, image, and sticker.
-  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is Popkid`) ; return}
+  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is popkid`) ; return}
 
       if(data.status == 'non') {
           etat = 'Desactived'
@@ -560,7 +560,7 @@ Link: ${url}
 
 To activate or modify the mention, follow this syntax: mention link type message
 The different types are audio, video, image, and sticker.
-Example: mention https://telegra.ph/file/52e3bb0ba3868d64df3f0.jpg image Hi, my name is Popkid
+Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is popkid
 
 To stop the mention, use mention stop`;
 
