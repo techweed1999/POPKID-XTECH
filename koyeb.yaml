@@ -1,6 +1,6 @@
 name: popkid-xtech
 services:
-  - name: popkid-xd-service
+  - name: popkid-xtech-service
     type: web
     ports:
       - 5000
