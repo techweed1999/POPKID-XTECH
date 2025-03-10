@@ -17,7 +17,7 @@ BOT_NAME: process.env.BOT_NAME || "✦popkid✦",
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react   
 
-STICKER_NAME: process.env.STICKER_NAME || "✦POPKIF-XTECH✦",
+STICKER_NAME: process.env.STICKER_NAME || "✦POPKID-XTECH✦",
 // type sticker pack name  
 
 CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🔥,❤️‍🩹,❤️,🩷,🧡,💛,💚,💙,🩵,💜,🤎,🖤,🩶,🤍",
