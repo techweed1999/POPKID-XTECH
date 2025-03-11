@@ -46,7 +46,7 @@ const allMenu = async (m, sock) => {
           isForwarded: true,
           forwardingScore: 999,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363315182578784@newsletter', // Preserved newsletter JID
+            newsletterJid: ', // Preserved newsletter JID
             newsletterName: "ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ",
             serverMessageId: -1,
           },
@@ -54,7 +54,7 @@ const allMenu = async (m, sock) => {
             title: "😇ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ😇",
             body: pushName,
             thumbnailUrl: 'https://files.catbox.moe/w5xf3f.jpg', // Thumbnail URL
-            sourceUrl: 'https://github.com/Popkiddevs/POPKID-XTECH', // Source URL
+            sourceUrl: 'https://files.catbox.moe/krnasw.m4a', // Source URL
             mediaType: 1,
             renderLargerThumbnail: true,
           },
