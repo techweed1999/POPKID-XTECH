@@ -18,7 +18,7 @@ const LogoCmd = async (m, sock) => {
         isForwarded: true,
         forwardingScore: 999,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363315182578784@newsletter',
+          newsletterJid: '120363290715861418@newsletter',
           newsletterName: "popkid-MD",
           serverMessageId: -1,
         },
@@ -95,7 +95,7 @@ const LogoCmd = async (m, sock) => {
             isForwarded: true,
             forwardingScore: 999,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363315182578784@newsletter',
+              newsletterJid: '120363290715861418@newsletter',
               newsletterName: "popkid xtech",
               serverMessageId: -1,
             },
