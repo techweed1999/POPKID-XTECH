@@ -53,8 +53,8 @@ const allMenu = async (m, sock) => {
           externalAdReply: {
             title: "😇ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ😇",
             body: pushName,
-            thumbnailUrl: '', // Thumbnail URL
-            sourceUrl: 'https://files.catbox.moe/krnasw.m4a', // Source URL
+            thumbnailUrl: 'https://files.catbox.moe/w5xf3f.jpg', // Thumbnail URL
+            sourceUrl: 'https://github.com/Popkiddevs/POPKID-XTECH', // Source URL
             mediaType: 1,
             renderLargerThumbnail: true,
           },
