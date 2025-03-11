@@ -11,7 +11,7 @@ const sendCommandMessage = async (m, sock, messageContent) => {
         isForwarded: true,
         forwardingScore: 999,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363315182578784@newsletter',
+          newsletterJid: '120363290715861418@newsletter',
           newsletterName: "popkid-MD",
           serverMessageId: -1,
         },
