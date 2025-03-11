@@ -46,14 +46,14 @@ const allMenu = async (m, sock) => {
           isForwarded: true,
           forwardingScore: 999,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: ', // Preserved newsletter JID
+            newsletterJid: '120363315182578784@newsletter', // Preserved newsletter JID
             newsletterName: "ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ",
             serverMessageId: -1,
           },
           externalAdReply: {
             title: "😇ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ😇",
             body: pushName,
-            thumbnailUrl: 'https://files.catbox.moe/w5xf3f.jpg', // Thumbnail URL
+            thumbnailUrl: '', // Thumbnail URL
             sourceUrl: 'https://files.catbox.moe/krnasw.m4a', // Source URL
             mediaType: 1,
             renderLargerThumbnail: true,
