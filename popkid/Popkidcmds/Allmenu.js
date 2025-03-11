@@ -63,18 +63,7 @@ const allMenu = async (m, sock) => {
       { quoted: m }
     );
   };
-// Send audio
-        await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/krnasw.m4a' },
-            mimetype: 'audio/mp4',
-            ptt: true
-        }, { quoted: mek });
-        
-    } catch (e) {
-        console.log(e);
-        reply(`${e}`);
-    }
-});
+
   // Command: allmenu
   if (cmd === "menu") {
     await m.React('⏳'); // React with a loading icon
