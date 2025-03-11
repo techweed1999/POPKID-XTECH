@@ -46,7 +46,7 @@ const allMenu = async (m, sock) => {
           isForwarded: true,
           forwardingScore: 999,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363315182578784@newsletter', // Preserved newsletter JID
+            newsletterJid: '120363290715861418@newsletter', // Preserved newsletter JID
             newsletterName: "ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ",
             serverMessageId: -1,
           },
