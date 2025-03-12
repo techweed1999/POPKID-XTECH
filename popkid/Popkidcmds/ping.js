@@ -43,7 +43,7 @@ const OthersCmd = async (m, sock) => {
             serverMessageId: -1,
           },
           externalAdReply: {
-            title: "✨ Sarkar-MD ✨",
+            title: "😇popkid xtech😇",
             body: pushName,
             thumbnailUrl: 'https://files.catbox.moe/w5xf3f.jpg', // Thumbnail URL
             sourceUrl: 'https://github.com/Popkiddevs/POPKID-XTECH', // Source URL
