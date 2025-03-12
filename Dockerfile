@@ -1,20 +1,20 @@
-# Base image
 FROM node:lts-buster
 
-# Set working directory
-WORKDIR /POPKID-XTECH
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
 
-# Copy package.json and package-lock.json (if available) first for caching
-COPY package*.json ./
+COPY package.json .
 
-# Install dependencies
-RUN npm install --production && npm install -g pm2
+RUN npm install && npm install -g qrcode-terminal pm2
 
-# Copy rest of the files
 COPY . .
 
-# Expose necessary ports
-EXPOSE 9090
+EXPOSE 3000
 
-# Start the application
-CMD ["npm", "start"]
+
+CMD ["pm2-runtime", "start", "index.js"]
