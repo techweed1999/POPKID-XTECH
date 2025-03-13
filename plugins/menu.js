@@ -8,12 +8,12 @@ cmd({
     pattern: "menu",
     desc: "menu the bot",
     category: "menu",
-    react: "⚡",
+    react: "💖",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
+        let dec = `╭━━━〔 *✦ Silva ✦ Spark ✦ MD ✦* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : *${config.OWNER_NAME}*
 ┃★│ Baileys : *Multi Device*
@@ -21,27 +21,24 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃★│ Platform : *Heroku*
 ┃★│ Mode : *[${config.MODE}]*
 ┃★│ Prifix : *[${config.PREFIX}]*
-┃★│ Version : *3.0.0 Bᴇᴛᴀ*
+┃★│ Version : *1.0.0 *
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Menu List* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• Quranmenu
-┃◈┃• Prayertime
-┃◈┃• Aimenu
-┃◈┃• Anmiemenu
-┃◈┃• Reactions
-┃◈┃• Convertmenu
-┃◈┃• Funmenu
-┃◈┃• Dlmenu
-┃◈┃• Listcmd
-┃◈┃• Mainmenu
-┃◈┃• Groupmenu
-┃◈┃• Allmenu
-┃◈┃• Ownermenu
-┃◈┃• Othermenu
-┃◈┃• Logo <text>
-┃◈┃• Repo
+┃◈┃• aimenu
+┃◈┃• anmiemenu
+┃◈┃• convertmenu
+┃◈┃• funmenu
+┃◈┃• dlmenu
+┃◈┃• listcmd
+┃◈┃• mainmenu
+┃◈┃• groupmenu
+┃◈┃• allmenu
+┃◈┃• ownermenu
+┃◈┃• othermenu
+┃◈┃• logo <text>
+┃◈┃• repo
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > ${config.DESCRIPTION}`;
@@ -49,15 +46,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -67,7 +64,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Popkiddevs/POPKID-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+            audio: { url: 'https://files.catbox.moe/a1sh4u.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
@@ -78,71 +75,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     }
 });
 
-cmd({
-    pattern: "reactions",
-    desc: "Shows the reaction commands",
-    category: "menu",
-    react: "💫",
-    filename: __filename
-}, 
-async (conn, mek, m, { from, quoted, reply }) => {
-    try {
-        let dec = `╭━━〔 *Reactions Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• bully @tag
-┃◈┃• cuddle @tag
-┃◈┃• cry @tag
-┃◈┃• hug @tag
-┃◈┃• awoo @tag
-┃◈┃• kiss @tag
-┃◈┃• lick @tag
-┃◈┃• pat @tag
-┃◈┃• smug @tag
-┃◈┃• bonk @tag
-┃◈┃• yeet @tag
-┃◈┃• blush @tag
-┃◈┃• smile @tag
-┃◈┃• wave @tag
-┃◈┃• highfive @tag
-┃◈┃• handhold @tag
-┃◈┃• nom @tag
-┃◈┃• bite @tag
-┃◈┃• glomp @tag
-┃◈┃• slap @tag
-┃◈┃• kill @tag
-┃◈┃• happy @tag
-┃◈┃• wink @tag
-┃◈┃• poke @tag
-┃◈┃• dance @tag
-┃◈┃• cringe @tag
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
-
-        await conn.sendMessage(
-            from,
-            {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
-                caption: dec,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
-                        serverMessageId: 144
-                    }
-                }
-            },
-            { quoted: mek }
-        );
-
-    } catch (e) {
-        console.log(e);
-        reply(`${e}`);
-    }
-});
 
 // dlmenu
 
@@ -150,7 +82,7 @@ cmd({
     pattern: "dlmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⤵️",
+    react: "💚",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -164,40 +96,23 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• Insta
 ┃◈┃• apk
 ┃◈┃• img
-┃◈┃• tt2
-┃◈┃• pins
-┃◈┃• apk2
-┃◈┃• fb2
-┃◈┃• pinterest 
 ┃◈┃• spotify
 ┃◈┃• play
 ┃◈┃• play2
 ┃◈┃• play3
-┃◈┃• play4
-┃◈┃• play5
-┃◈┃• play6
-┃◈┃• play7
-┃◈┃• play8
-┃◈┃• play9
-┃◈┃• play10
+┃◈┃• tt2
 ┃◈┃• audio
 ┃◈┃• video
 ┃◈┃• video2
-┃◈┃• video3
-┃◈┃• video4
-┃◈┃• video5
-┃◈┃• video6
-┃◈┃• video7
-┃◈┃• video8
-┃◈┃• video9
-┃◈┃• video10
 ┃◈┃• ytmp3
 ┃◈┃• ytmp4
 ┃◈┃• song
 ┃◈┃• darama
+┃◈┃• git
 ┃◈┃• gdrive
-┃◈┃• ssweb
-┃◈┃• tiks
+┃◈┃• smovie
+┃◈┃• baiscope 
+┃◈┃• ginisilia 
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > ${config.DESCRIPTION}`;
@@ -205,15 +120,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -233,7 +148,7 @@ cmd({
     pattern: "groupmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⤵️",
+    react: "🥰",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -283,15 +198,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -319,13 +234,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         let dec = `╭━━〔 *Fun Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• shapar
-┃◈┃• rate
 ┃◈┃• insult
-┃◈┃• hack
+┃◈┃• pickup
 ┃◈┃• ship
 ┃◈┃• character
-┃◈┃• pickup 
+┃◈┃• hack
 ┃◈┃• joke
 ┃◈┃• hrt
 ┃◈┃• hpy
@@ -350,15 +263,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -385,23 +298,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• timenow
-┃◈┃• date
-┃◈┃• count
-┃◈┃• calculate
-┃◈┃• countx
-┃◈┃• flip
-┃◈┃• coinflip
-┃◈┃• rcolor
-┃◈┃• roll
-┃◈┃• fact
-┃◈┃• cpp
-┃◈┃• rw
+┃◈┃• vv
 ┃◈┃• pair
 ┃◈┃• pair2
-┃◈┃• pair3
-┃◈┃• fancy
-┃◈┃• logo <text>
+┃◈┃• fact
+┃◈┃• font
 ┃◈┃• define
 ┃◈┃• news
 ┃◈┃• movie
@@ -421,15 +322,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -473,15 +374,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+               image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -532,15 +433,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -569,23 +470,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈╭─────────────·๏
 ┃◈┃• sticker
 ┃◈┃• sticker2
-┃◈┃• emojimix
 ┃◈┃• fancy
 ┃◈┃• take
 ┃◈┃• tomp3
 ┃◈┃• tts
 ┃◈┃• trt
-┃◈┃• base64
-┃◈┃• unbase64
-┃◈┃• binary
-┃◈┃• dbinary
-┃◈┃• tinyurl
-┃◈┃• urldecode
-┃◈┃• urlencode
-┃◈┃• url
-┃◈┃• repeat 
-┃◈┃• ask
-┃◈┃• readmore
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > ${config.DESCRIPTION}`;
@@ -593,15 +482,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -662,15 +551,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -699,20 +588,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         let dec = `╭━━〔 *Ai Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• ai
-┃◈┃• gpt3
-┃◈┃• gpt2
-┃◈┃• gptmini
 ┃◈┃• gpt
 ┃◈┃• meta
 ┃◈┃• blackbox
-┃◈┃• luma
-┃◈┃• dj 
-┃◈┃• khan
-┃◈┃• jawad
 ┃◈┃• gpt4
 ┃◈┃• bing
-┃◈┃• imagine 
-┃◈┃• imagine2
 ┃◈┃• copilot
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
@@ -721,15 +601,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/jdco7i.jpg` },
+                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'Popkid',
+                        newsletterJid: '120363200367779016@newsletter',
+                        newsletterName: 'SILVA SPARK MD 💖🦄',
                         serverMessageId: 143
                     }
                 }
@@ -742,3 +622,4 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         reply(`${e}`);
     }
 });
+
