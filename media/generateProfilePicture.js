@@ -1,3 +1,6 @@
+
+
+
 import Jimp from 'jimp';
 import fs from 'fs/promises'; // Using promises for async/await compatibility
 import path from 'path'; // To handle file paths
