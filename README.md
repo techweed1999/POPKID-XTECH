@@ -27,7 +27,7 @@
 - <a href='https://signup.heroku.com/' target="_silver"><img alt='Heroku' src='https://img.shields.io/badge/-𝐂𝐑𝐄𝐀𝐓𝐄 𝐀𝐂𝐂𝐎𝐔𝐍𝐓 𝐍𝐎𝐖-rgb(224, 255, 255)?style=for-the-badge&logo=ferrari&logoColor=pink' width="240" height="38.45"/></a>
 
 # 🧡 ᴅᴇᴘʟᴏʏ ʙᴏᴛ
-- <a align="center"><a href="https://tinyurl.com/3u3scpw4"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-yellow?style=for-the-badge&logo=porsche" width="220" height="38.45"/></a></p>
+- <a align="center"><a href="https://tinyurl.com/3c4jzjjz"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-yellow?style=for-the-badge&logo=porsche" width="220" height="38.45"/></a></p>
 
 ## 💖 CONTACT ME
 [![Whatsapp contact](https://img.shields.io/badge/Contact-Dev%20Popkid-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/+254111385747)
