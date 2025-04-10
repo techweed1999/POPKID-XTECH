@@ -14,7 +14,7 @@
  
 
 # ❤️ ғᴏʀᴋ ᴍʏ ʀᴇᴘᴏ
-- <a align="center"><a href="https://github.com/Popkiddevs/POPKID-XTECH/fork"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-red?style=for-the-badge&logo=porsche" width="220" height="38.45"/></a></p>
+- <a align="center"><a href="https://github.com/Popkiddevs/POPKID-XTECH/fork"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-colorless?style=for-the-badge&logo=porsche" width="220" height="38.45"/></a></p>
 
 # 🤍 ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ
 </a></p>
