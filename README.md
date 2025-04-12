@@ -38,3 +38,13 @@
 
 ## 💖 CONTACT ME
 [![Whatsapp contact](https://img.shields.io/badge/Contact-Dev%20Popkid-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/+254111385747)
+
+
+🔒 This bot is not affiliated with WhatsApp Inc. Use at your own risk.
+
+🔒 Misuse can lead to WhatsApp account bans.
+
+🔒 The developer is not responsible for bans or misuse.
+
+
+---
