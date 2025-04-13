@@ -36,6 +36,12 @@
 </a></p>
 - <a href='https://host.talkdrove.com/dashboard/select-bot/prepare-deployment?botId=53' target="_silver"><img alt='Talkdrove' src='https://img.shields.io/badge/-𝐓𝐀𝐋𝐊𝐃𝐑𝐎𝐕𝐄 𝐇𝐎𝐒𝐓𝐈𝐍𝐆-rgb(224, 255, 255)?style=for-the-badge&logo=ferrari&logoColor=orange' width="240" height="38.45"/></a>
 
+### <br>   ❖ DEPLOY_RENDER ❖
+
+<a href='https://dashboard.render.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/RENDER-h?color=maroon&style=for-the-badge&logo=render'/></a></p>
+
+-----------
+
 ## 💖 CONTACT ME
 [![Whatsapp contact](https://img.shields.io/badge/Contact-Dev%20Popkid-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/+254111385747)
 
