@@ -31,7 +31,7 @@ A powerful multi-device WhatsApp bot built with love and style!
 
 - Multi-device WhatsApp support
 - Stylish and fast command handling
-- Easy to deploy on Heroku & Vercel
+- Easy to deploy on Heroku & render
 - Regular updates & active community
 
 ---
