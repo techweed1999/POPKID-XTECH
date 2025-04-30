@@ -1,5 +1,5 @@
-<div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; margin: 10px auto; width: fit-content; display: flex; flex-direction: column; gap: 10px; align-items: center;">
-  <div style="display: flex; justify-content: center; gap: 10px;">
+<div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; margin: 10px auto; width: fit-content;">
+  <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px;">
     <div>
       <h2>🤍 ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ</h2>
       <a href="https://popkid.vercel.app/">
@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div style="display: flex; justify-content: center; gap: 10px;">
+  <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px;">
     <div>
       <h2 align="center">❤️ ғᴏʀᴋ ᴍʏ ʀᴇᴘᴏ</h2>
       <a href="https://github.com/Popkiddevs/POPKID-XTECH/fork">
@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <div style="display: flex; justify-content: center; gap: 10px;">
+  <div style="display: flex; justify-content: center; gap: 20px;">
     <div>
       <h2 align="center">🖤 ᴄʀᴇᴀᴛᴇ ᴛᴀʟᴋᴅʀᴏᴠᴇ ᴀᴄᴄᴏᴜɴᴛ</h2>
       <a href="https://host.talkdrove.com/auth/signup?ref=F3E97634">
