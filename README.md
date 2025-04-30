@@ -36,12 +36,6 @@
         <img src="https://img.shields.io/badge/CREATE%20ACCOUNT-grey?style=for-the-badge&logo=talkdrove&logoColor=white&labelColor=black" width="220" height="45"/>
       </a>
     </div>
-    
-    <h2 align="center">💖 CONTACT ME</h2>
-    <a href="https://wa.me/+254111385747">
-      <img src="https://img.shields.io/badge/Contact-Dev%20Popkid-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=black" height="45"/>
-    </a>
-  </div>
   <div>
     <a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l">
       <img alt="POPKID XTECH" height="350" src="https://files.catbox.moe/lkmvah.jpg" />
