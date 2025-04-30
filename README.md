@@ -25,14 +25,18 @@ A powerful multi-device WhatsApp bot built with love and style!
   <img src="https://img.shields.io/badge/Deploy%20to-Heroku-6762A6?style=for-the-badge&logo=heroku&logoColor=white" />
 </a>
 
+<a href="https://github.com/Popkiddevs" target="_blank">
+  <img src="https://img.shields.io/github/followers/Popkiddevs?label=Follow&style=for-the-badge&logo=github" />
+</a>
+
 ---
 
 ## ✨ Features
 
-- Multi-device WhatsApp support
-- Stylish and fast command handling
-- Easy to deploy on Heroku & render
-- Regular updates & active community
+- Multi-device WhatsApp support  
+- Stylish and fast command handling  
+- Easy to deploy on Heroku & Render  
+- Regular updates & active community  
 
 ---
 
