@@ -18,7 +18,7 @@ A powerful multi-device WhatsApp bot built with love and style!
 </a>
 
 <a href="https://popkid.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Scan-QR%20Code-1F2937?style=for-the-badge&logo=vercel" />
+  <img src="https://img.shields.io/badge/Get-SESSION%20ID-1F2937?style=for-the-badge&logo=vercel" />
 </a>
 
 <a href="https://dashboard.heroku.com/new?template=https://github.com/Popkiddevs/POPKID-XTECH" target="_blank">
