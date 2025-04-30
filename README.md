@@ -36,17 +36,7 @@
         <img src="https://img.shields.io/badge/CREATE%20ACCOUNT-grey?style=for-the-badge&logo=talkdrove&logoColor=white&labelColor=black" width="220" height="45"/>
       </a>
     </div>
-    <div>
-      <h2 align="center">⚡ ᴛᴀʟᴋᴅʀᴏᴠᴇ ʜᴏsᴛɪɴɢ</h2>
-      <a href="https://host.talkdrove.com/dashboard/select-bot/prepare-deployment?botId=53" target="_blank">
-        <img src="https://img.shields.io/badge/-TALKDROVE%20HOSTING-orange?style=for-the-badge&logo=talkdrove&logoColor=orange&labelColor=black" width="240" height="45" alt="Talkdrove Hosting" />
-      </a>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <div>
+    
     <h2 align="center">💖 CONTACT ME</h2>
     <a href="https://wa.me/+254111385747">
       <img src="https://img.shields.io/badge/Contact-Dev%20Popkid-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=black" height="45"/>
