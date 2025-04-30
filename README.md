@@ -26,7 +26,7 @@ A powerful multi-device WhatsApp bot built with love and style!
 </a>
 
 <a href="https://github.com/Popkiddevs" target="_blank">
-  <img src="https://img.shields.io/github/followers/Popkiddevs?label=Follow&style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/followers/Popkiddevs?label=Followers&style=for-the-badge&logo=github" />
 </a>
 
 ---
