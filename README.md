@@ -1,3 +1,9 @@
+<a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l">
+      <img alt="POPKID XTECH" height="350" src="https://files.catbox.moe/lkmvah.jpg" />
+    </a>
+  </div>
+</div>
+
 <div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; margin: 10px auto; width: fit-content;">
   <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px;">
     <div>
