@@ -31,10 +31,7 @@
 
   <div style="display: flex; justify-content: center; gap: 20px;">
     <div>
-      <h2 align="center">🖤 ᴄʀᴇᴀᴛᴇ ᴛᴀʟᴋᴅʀᴏᴠᴇ ᴀᴄᴄᴏᴜɴᴛ</h2>
-      <a href="https://host.talkdrove.com/auth/signup?ref=F3E97634">
-        <img src="https://img.shields.io/badge/CREATE%20ACCOUNT-grey?style=for-the-badge&logo=talkdrove&logoColor=white&labelColor=black" width="220" height="45"/>
-      </a>
+      <h2 align="center">
     </div>
   <div>
     <a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l">
