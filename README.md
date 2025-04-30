@@ -9,24 +9,38 @@ A powerful multi-device WhatsApp bot built with love and style!
 
 ### 🚀 Quick Links
 
+**Community & Access**
+
 <a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l" target="_blank">
   <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
-<a href="https://github.com/Popkiddevs/POPKID-XTECH/fork" target="_blank">
-  <img src="https://img.shields.io/badge/Fork%20on-GitHub-000?style=for-the-badge&logo=github" />
+<a href="https://popkid.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Scan-QR%20Code-1F2937?style=for-the-badge&logo=vercel" />
 </a>
 
-<a href="https://popkid.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Get-SESSION%20ID-1F2937?style=for-the-badge&logo=vercel" />
+<br><br>
+
+**Development**
+
+<a href="https://github.com/Popkiddevs/POPKID-XTECH/fork" target="_blank">
+  <img src="https://img.shields.io/badge/Fork%20on-GitHub-000?style=for-the-badge&logo=github" />
 </a>
 
 <a href="https://dashboard.heroku.com/new?template=https://github.com/Popkiddevs/POPKID-XTECH" target="_blank">
   <img src="https://img.shields.io/badge/Deploy%20to-Heroku-6762A6?style=for-the-badge&logo=heroku&logoColor=white" />
 </a>
 
+<br><br>
+
+**GitHub Insights**
+
 <a href="https://github.com/Popkiddevs" target="_blank">
-  <img src="https://img.shields.io/github/followers/Popkiddevs?label=Followers&style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/followers/Popkiddevs?label=Follow&style=for-the-badge&logo=github" />
+</a>
+
+<a href="https://github.com/Popkiddevs/POPKID-XTECH" target="_blank">
+  <img src="https://img.shields.io/github/stars/Popkiddevs/POPKID-XTECH?label=Stars&style=for-the-badge&logo=github" />
 </a>
 
 ---
