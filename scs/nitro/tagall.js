@@ -1,43 +1,64 @@
- import config from '../../config.cjs';
- 
+import config from '../../config.cjs';
 
- const tagall = async (m, sock) => {
-   const prefix = config.PREFIX;
-   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
- 
+// ⚙️ Module Configuration ⚙️
+const tagEveryoneInGroup = async (message, sock) => {
+  // 🔑 Retrieve Command Prefix 🔑
+  const trigger = config.PREFIX;
 
-   if (cmd === "tagall") {
-     if (!m.isGroup) {
-       await sock.sendMessage(m.from, { text: '🚫 This command is for groups only!' }, { quoted: m });
-       return;
-     }
- 
+  // 🔍 Identify User's Intention 🔍
+  const userCommand = message.body.startsWith(trigger)
+    ? message.body.slice(trigger.length).trim().split(' ')[0].toLowerCase()
+    : '';
 
-     try {
-       const groupMetadata = await sock.groupMetadata(m.from);
-       const participants = groupMetadata.participants;
-       const mentions = participants.map(({ id }) => id);
- 
+  // ✅ Execute 'tagall' Command Logic ✅
+  if (userCommand === 'tagall') {
+    // 🛡️ Group Contextual Check 🛡️
+    if (!message.isGroup) {
+      return await sock.sendMessage(
+        message.from,
+        { text: '🚫 Command applicable within groups only.' },
+        { quoted: message }
+      );
+    }
 
-       const header = `╔═══════ 📢 POPKID XMD TAG 📢 ═══════╗\n`;
-       let body = '';
-       for (let i = 0; i < participants.length; i++) {
-         const username = participants[i].id.split('@')[0];
-         body += `║   ✨ @${username.padEnd(20)} ✨   ║\n`; // Adjust padding as needed
-       }
-       const footer = `╚═══════════ ${participants.length} Members Tagged! ═══════════╝`;
- 
+    try {
+      // 📡 Fetch Real-time Group Data 📡
+      const groupData = await sock.groupMetadata(message.from);
+      const groupParticipants = groupData.participants;
 
-       const message = header + body + footer;
- 
+      // 🎯 Prepare User Mentions 🎯
+      const targets = groupParticipants.map(({ id }) => id);
 
-       await sock.sendMessage(m.from, { text: message, mentions: mentions }, { quoted: m });
-     } catch (error) {
-       console.error("Error tagging all members:", error);
-       await sock.sendMessage(m.from, { text: '⚠️ Failed to tag all members. Please ensure the bot has the necessary permissions.', }, { quoted: m });
-     }
-   }
- };
- 
+      // 🎨 Craft the Notification Message 🎨
+      const announcementHeader = `📢 🔔 Paging All Members! 🔔 📢\n\n`;
+      let announcementBody = '';
+      for (const member of groupParticipants) {
+        const userName = member.id.split('@')[0];
+        announcementBody += `👤 🔗 @${userName} is here!\n`; // Emphasizing presence
+      }
+      const announcementFooter = `\n✨ ${groupParticipants.length} members have been notified. ✨`;
 
- export default tagall;
+      const broadcastMessage = announcementHeader + announcementBody + announcementFooter;
+
+      // 🚀 Dispatch the Tagging Notification 🚀
+      await sock.sendMessage(
+        message.from,
+        { text: broadcastMessage, mentions: targets },
+        { quoted: message }
+      );
+    } catch (error) {
+      // 🚨 Handle Potential Issues 🚨
+      console.error('🔥 Action Failed: Unable to tag all members:', error);
+      await sock.sendMessage(
+        message.from,
+        {
+          text:
+            '⚠️ Alert: Tagging operation encountered an issue. Ensure necessary permissions are granted.',
+        },
+        { quoted: message }
+      );
+    }
+  }
+};
+
+export default tagEveryoneInGroup;
