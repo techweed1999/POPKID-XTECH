@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡POPKID-XMD⚡  
+# POPKID-XMD  
 A powerful multi-device WhatsApp bot built with love and style!
 
 ![POPKID XTECH Banner](https://files.catbox.moe/ialfpw.png)
