@@ -3,7 +3,7 @@
 # POPKID-XMD  
 A powerful multi-device WhatsApp bot built with love and style!
 
-![POPKID XTECH Banner](https://files.catbox.moe/ialfpw.png)
+![POPKID XTECH Banner](https://files.catbox.moe/o0q75n.png)
 
 ---
 
