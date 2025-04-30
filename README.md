@@ -1,16 +1,45 @@
-<a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l">
-      <img alt="POPKID XTECH" height="400" src="https://files.catbox.moe/ialfpw.png" />
-    </a>
-  </div>
-</div>
+<div align="center">
 
-<a href="https://github.com/Popkiddevs/POPKID-XTECH/fork" target="blank"><img align="center" src="https://i.imgur.com/cxaSEWe.png" alt="Deploy bot" height="112" width="310" /></a>
+# ⚡ POPKID-XTECH ⚡  
+A powerful multi-device WhatsApp bot built with love and style!
 
-</div>
+![POPKID XTECH Banner](https://files.catbox.moe/ialfpw.png)
 
-<a href="https://popkid.vercel.app/"><img align="center" src="https://i.imgur.com/dzPTA6u.png" alt="Scan QR" height="112" width="300" /></a><br>
+---
 
-</div>
+### 🚀 Quick Links
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/Popkiddevs/POPKID-XTECH" target="blank"><img align="center" src="https://i.imgur.com/6rs61MY.png" alt="Deploy bot" height="112" width="310" /></a>
-  <div>
+<a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l" target="_blank">
+  <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</a>
+
+<a href="https://github.com/Popkiddevs/POPKID-XTECH/fork" target="_blank">
+  <img src="https://img.shields.io/badge/Fork%20on-GitHub-000?style=for-the-badge&logo=github" />
+</a>
+
+<a href="https://popkid.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Scan-QR%20Code-1F2937?style=for-the-badge&logo=vercel" />
+</a>
+
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Popkiddevs/POPKID-XTECH" target="_blank">
+  <img src="https://img.shields.io/badge/Deploy%20to-Heroku-6762A6?style=for-the-badge&logo=heroku&logoColor=white" />
+</a>
+
+---
+
+## ✨ Features
+
+- Multi-device WhatsApp support
+- Stylish and fast command handling
+- Easy to deploy on Heroku & Vercel
+- Regular updates & active community
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Popkiddevs/POPKID-XTECH.git
+cd POPKID-XTECH
+npm install
+npm start
