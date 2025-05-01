@@ -20,7 +20,7 @@ A powerful multi-device WhatsApp bot built with love and style!
 </a>
 
 <a href="https://www.mediafire.com/file/72g3wg8lnyki7v9/POPKID-XTECH-main.zip/file" target="_blank">
-  <img src="https://img.shields.io/badge/Download-POPKID--XTECH-brightgreen?style=for-the-badge&logo=download&logoColor=white" alt="Download POPKID-XTECH">
+  <img src="https://img.shields.io/badge/Download-BOT FILE HERE-brightgreen?style=for-the-badge&logo=download&logoColor=white" alt="Download POPKID-XTECH">
 </a>
 
 <br><br>
