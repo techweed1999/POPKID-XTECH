@@ -51,10 +51,10 @@ _✨ *𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗠𝗘𝗡𝗨* ✨_
 | 🔒 | ${prefix}block
 | 🧋 | ${prefix}autolikestatus
 | 🔓 | ${prefix}unblock
-| 🤖 | ${prefix}setppbot
+| 🤖 | ${prefix}antidelete on
 | 🚫 | ${prefix}anticall
-| 🛑 | ${prefix}setstatus
-| 📝 | ${prefix}setnamebot
+| 🛑 | ${prefix}settings
+| 📝 | ${prefix}setname
 ═══════════════════════
 
 ═══════════════════════
