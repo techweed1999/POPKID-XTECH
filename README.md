@@ -15,7 +15,7 @@ A powerful multi-device WhatsApp bot built with love and style!
   <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
-<a href="https://popkid.vercel.app/" target="_blank">
+<a href="https://vercel.com/new/popkidfs-projects/success?developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=xmdpair-1s81mjbzy-popkidfs-projects.vercel.app&projectName=xmdpair&s=https%3A%2F%2Fgithub.com%2FPopkiddevs%2Fxmdpair&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1&flow-id=iMmUFOseg600cEIto95YJ" target="_blank">
   <img src="https://img.shields.io/badge/GET-SESSION%20ID-1F2937?style=for-the-badge&logo=vercel" />
 </a>
 
