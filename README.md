@@ -1,6 +1,6 @@
 <div align="center">
 
-# POPKID-XMD  
+# POPKID-XMD
 A powerful multi-device WhatsApp bot built with love and style!
 
 ![POPKID XTECH Banner](https://files.catbox.moe/o0q75n.png)
@@ -17,6 +17,10 @@ A powerful multi-device WhatsApp bot built with love and style!
 
 <a href="https://xmdpair.vercel.app/" target="_blank">
   <img src="https://img.shields.io/badge/GET-SESSION%20ID-1F2937?style=for-the-badge&logo=vercel" />
+</a>
+
+<a href="https://www.mediafire.com/file/72g3wg8lnyki7v9/POPKID-XTECH-main.zip/file" target="_blank">
+  <img src="https://img.shields.io/badge/Download-POPKID--XTECH-brightgreen?style=for-the-badge&logo=download&logoColor=white" alt="Download POPKID-XTECH">
 </a>
 
 <br><br>
@@ -47,17 +51,20 @@ A powerful multi-device WhatsApp bot built with love and style!
 
 ## ✨ Features
 
-- Multi-device WhatsApp support  
-- Stylish and fast command handling  
-- Easy to deploy on Heroku & Render  
-- Regular updates & active community  
+- Multi-device WhatsApp support
+- Stylish and fast command handling
+- Easy to deploy on Heroku & Render
+- Regular updates & active community
 
 ---
 
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/Popkiddevs/POPKID-XTECH.git
+git clone [https://github.com/Popkiddevs/POPKID-XTECH.git](https://github.com/Popkiddevs/POPKID-XTECH.git)
 cd POPKID-XTECH
 npm install
 npm start
+```
+
+</div>
