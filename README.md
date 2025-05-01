@@ -23,7 +23,7 @@ A powerful multi-device WhatsApp bot built with love and style!
   <img src="https://img.shields.io/badge/Download-POPKID--XTECH-brightgreen?style=for-the-badge&logo=download&logoColor=white" alt="Download POPKID-XTECH">
 </a>
 
-<a href="https://bot-hosting.net/?aff=1236580763458211871" target="_blank">
+<a href="https://dashboard.katabump.com/auth/login#e43cff" target="_blank">
   <img src="https://img.shields.io/badge/Create%20your%20panel%20here-4CAF50?style=for-the-badge&logo=cpanel&logoColor=white" alt="Create your panel here">
 </a>
 
