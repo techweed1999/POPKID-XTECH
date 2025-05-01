@@ -28,7 +28,7 @@ const config = {
   // Status interaction
   AUTOLIKE_EMOJI: process.env.AUTOLIKE_EMOJI || '🩷',
   AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS !== undefined ? process.env.AUTO_REPLY_STATUS === 'true' : false,
-  STATUS_READ_MSG: process.env.STATUS_READ_MSG || 'Status Viewed by joel-Md',
+  STATUS_READ_MSG: process.env.STATUS_READ_MSG || 'Status Viewed by Popkid-Md',
 
   // Anti features
   ANTI_LEFT: process.env.ANTI_LEFT !== undefined ? process.env.ANTI_LEFT === 'true' : true,
