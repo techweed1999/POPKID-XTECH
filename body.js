@@ -232,7 +232,7 @@ async function start() {
       await Handler(chatUpdate, Matrix, logger);
       try {
         const mek = chatUpdate.messages?.[0];
-        if (!mek?.key?.fromMe && config.AUTO_REACT && mek?.message) {
+        if (config.AUTO_REACT && mek?.message) {
           const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
           await doReact(randomEmoji, mek, Matrix);
         }
