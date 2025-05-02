@@ -15,14 +15,13 @@ const alive = async (m, Matrix) => {
 
   if (['alive', 'uptime', 'runtime'].includes(cmd)) {
     const shortReply = `
-╭───〔 *🤖 BOT STATUS* 〕───╮
-│
-│ ✅ *Status:* Online & Active
-│ ⏱️ *Uptime:* ${days}d ${hours}h ${minutes}m ${seconds}s
-│ 🛠️ *Engine:* POPKID XMD
-│
-│  *⏺️popkid xmd uptime⏺️*
-╰────────────────────────╯
+*───〔 🤖 BOT STATUS 🤖 〕───*
+*✅ Status:* *Online & Active*
+*⏱️ Uptime:* *${days}d* ${hours}h ${minutes}m ${seconds}s
+*🛠️ Engine:* *POPKID XMD*
+
+  *⏺️popkid xmd uptime⏺️*
+*──────────────────────────*
     `.trim();
 
     m.reply(shortReply);
