@@ -7,7 +7,7 @@ import { gtts } from 'gtts';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const readMessageAloud = async (m, sock) => {
+const textToMp3 = async (m, sock) => {
   const prefix = config.PREFIX;
 
   if (m.body.startsWith(prefix + 'tomp3') && m.quotedMessage) {
@@ -19,10 +19,10 @@ const readMessageAloud = async (m, sock) => {
     }
 
     try {
-      await m.React('🗣️'); // Indicate processing
+      await m.React('🎧'); // Changed reaction emoji to a headphone
 
       const speech = new gtts(textToSpeak, 'en');
-      const audioFilePath = path.join(__dirname, 'read_aloud.mp3');
+      const audioFilePath = path.join(__dirname, 'text_to_mp3.mp3'); // Changed filename
 
       await new Promise((resolve, reject) => {
         speech.save(audioFilePath, (err, result) => {
@@ -49,9 +49,9 @@ const readMessageAloud = async (m, sock) => {
 
     } catch (error) {
       console.error('TTS Error:', error);
-      await sock.sendMessage(m.from, { text: 'An error occurred while reading the message aloud.' }, { quoted: m });
+      await sock.sendMessage(m.from, { text: 'An error occurred while converting text to MP3.' }, { quoted: m }); // Updated error message
     }
   }
 };
 
-export default readMessageAloud;
+export default textToMp3; // Changed export name to reflect the command
