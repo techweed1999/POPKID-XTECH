@@ -33,8 +33,8 @@ const lime = chalk.bold.hex("#32CD32");
 let useQR = false;
 let initialConnection = true;
 const PORT = process.env.PORT || 3000;
-const whatsappChannelLink = 'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31';
-const whatsappChannelId = '0029VajweHxKQuJP6qnjLM31@newsletter'; // Ensure this is the correct format
+const whatsappChannelLink = 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l';
+const whatsappChannelId = '120363290715861418@newsletter'; // Ensure this is the correct format
 
 const MAIN_LOGGER = pino({
   timestamp: () => `,"time":"${new Date().toJSON()}"`
