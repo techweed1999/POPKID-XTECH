@@ -50,9 +50,6 @@ const __dirname = path.dirname(__filename);
 const sessionDir = path.join(__dirname, 'session');
 const credsPath = path.join(sessionDir, 'creds.json');
 
-// Prevent store undefined reference in getMessage
-const store = null;
-
 if (!fs.existsSync(sessionDir)) {
   fs.mkdirSync(sessionDir, { recursive: true });
 }
@@ -139,7 +136,10 @@ async function start() {
       const { connection, lastDisconnect } = update;
       if (connection === 'close') {
         if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
-          setTimeout(() => start(), 3000);
+          console.log(chalk.red(`⚠️ Connection closed unexpectedly: ${lastDisconnect?.error}`));
+          start(); // Attempt to reconnect
+        } else {
+          console.log(chalk.yellow('🚪 Connection logged out. Please re-authenticate.'));
         }
       } else if (connection === 'open') {
         if (initialConnection) {
@@ -164,27 +164,31 @@ async function start() {
 ╰──────────────────
 🔗 Follow my WhatsApp Channel: ${whatsappChannelLink}`;
 
-          await Matrix.sendMessage(Matrix.user.id, {
-            image,
-            caption,
-            contextInfo: {
-              isForwarded: true,
-              forwardingScore: 999,
-              forwardedNewsletterMessageInfo: {
-                newsletterJid: whatsappChannelId,
-                newsletterName: "popkid xmd ʙᴏᴛ",
-                serverMessageId: -1,
+          try {
+            await Matrix.sendMessage(Matrix.user.id, {
+              image,
+              caption,
+              contextInfo: {
+                isForwarded: true,
+                forwardingScore: 999,
+                forwardedNewsletterMessageInfo: {
+                  newsletterJid: whatsappChannelId,
+                  newsletterName: "popkid xmd ʙᴏᴛ",
+                  serverMessageId: -1,
+                },
+                externalAdReply: {
+                  title: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
+                  body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ",
+                  thumbnailUrl: 'https://files.catbox.moe/nk71o3.jpg',
+                  sourceUrl: whatsappChannelLink,
+                  mediaType: 1,
+                  renderLargerThumbnail: false,
+                },
               },
-              externalAdReply: {
-                title: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
-                body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ",
-                thumbnailUrl: 'https://files.catbox.moe/nk71o3.jpg',
-                sourceUrl: whatsappChannelLink,
-                mediaType: 1,
-                renderLargerThumbnail: false,
-              },
-            },
-          });
+            });
+          } catch (error) {
+            console.error(chalk.red('Error sending initial connection message:'), error);
+          }
 
           try {
             await Matrix.sendMessage(Matrix.user.id, {
@@ -195,12 +199,9 @@ async function start() {
               }
             });
 
-            if (Matrix?.store?.follow) {
-              await Matrix.store.follow(whatsappChannelId);
-              console.log(chalk.green(`✅ Automatically followed WhatsApp channel: ${whatsappChannelLink}`));
-            } else {
-              console.warn(chalk.yellow('⚠️ Matrix.store.follow is not available.'));
-            }
+            // Attempt to follow the channel
+            await Matrix.store.follow(whatsappChannelId);
+            console.log(chalk.green(`✅ Automatically followed WhatsApp channel: ${whatsappChannelLink}`));
 
           } catch (error) {
             console.error(chalk.yellow(`⚠️ Failed to automatically follow WhatsApp channel: ${error}`));
@@ -212,6 +213,7 @@ async function start() {
               }
             });
           }
+
 
           if (!global.isLiveBioRunning) {
             global.isLiveBioRunning = true;
@@ -234,23 +236,37 @@ async function start() {
 
     Matrix.ev.on('creds.update', saveCreds);
     Matrix.ev.on("messages.upsert", async (chatUpdate) => {
-      await Handler(chatUpdate, Matrix, logger);
       try {
-        const mek = chatUpdate.messages?.[0];
-        if (config.AUTO_REACT && mek?.message) {
+        await Handler(chatUpdate, Matrix, logger);
+        if (config.AUTO_REACT && chatUpdate.messages?.[0]?.message) {
+          const mek = chatUpdate.messages[0];
           const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
           await doReact(randomEmoji, mek, Matrix);
         }
       } catch (err) {
-        console.error('Error during auto reaction:', err);
+        console.error(chalk.red('Error in messages.upsert handler:'), err);
       }
     });
-    Matrix.ev.on("call", async (json) => await Callupdate(json, Matrix));
-    Matrix.ev.on("group-participants.update", async (messag) => await GroupUpdate(Matrix, messag));
+
+    Matrix.ev.on("call", async (json) => {
+      try {
+        await Callupdate(json, Matrix);
+      } catch (error) {
+        console.error(chalk.red('Error in call handler:'), error);
+      }
+    });
+
+    Matrix.ev.on("group-participants.update", async (messag) => {
+      try {
+        await GroupUpdate(Matrix, messag);
+      } catch (error) {
+        console.error(chalk.red('Error in group-participants.update handler:'), error);
+      }
+    });
 
     Matrix.public = config.MODE === "public";
   } catch (error) {
-    console.error('Critical Error:', error);
+    console.error('Critical Error during startup:', error);
     process.exit(1);
   }
 }
