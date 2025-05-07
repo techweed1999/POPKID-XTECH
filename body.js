@@ -50,6 +50,9 @@ const __dirname = path.dirname(__filename);
 const sessionDir = path.join(__dirname, 'session');
 const credsPath = path.join(sessionDir, 'creds.json');
 
+// Prevent store undefined reference in getMessage
+const store = null;
+
 if (!fs.existsSync(sessionDir)) {
   fs.mkdirSync(sessionDir, { recursive: true });
 }
@@ -136,7 +139,7 @@ async function start() {
       const { connection, lastDisconnect } = update;
       if (connection === 'close') {
         if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
-          start();
+          setTimeout(() => start(), 3000);
         }
       } else if (connection === 'open') {
         if (initialConnection) {
@@ -192,9 +195,12 @@ async function start() {
               }
             });
 
-            // Attempt to follow the channel
-            await Matrix.store.follow(whatsappChannelId);
-            console.log(chalk.green(`✅ Automatically followed WhatsApp channel: ${whatsappChannelLink}`));
+            if (Matrix?.store?.follow) {
+              await Matrix.store.follow(whatsappChannelId);
+              console.log(chalk.green(`✅ Automatically followed WhatsApp channel: ${whatsappChannelLink}`));
+            } else {
+              console.warn(chalk.yellow('⚠️ Matrix.store.follow is not available.'));
+            }
 
           } catch (error) {
             console.error(chalk.yellow(`⚠️ Failed to automatically follow WhatsApp channel: ${error}`));
@@ -206,7 +212,6 @@ async function start() {
               }
             });
           }
-
 
           if (!global.isLiveBioRunning) {
             global.isLiveBioRunning = true;
