@@ -1,56 +1,74 @@
-import axios from "axios";
-import yts from "yt-search";
-import config from '../config.cjs';
+import config from '../../config.cjs';
+import fetch from 'node-fetch';
 
-const play = async (m, gss) => {
-  const prefix = config.PREFIX;
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(" ")[0].toLowerCase() : "";
-  const args = m.body.slice(prefix.length + cmd.length).trim().split(" ");
-
-  if (cmd === "play") {
-    if (args.length === 0 || !args.join(" ")) {
-      return m.reply("*Please provide a song name or keywords to search for.*");
-    }
-
-    const searchQuery = args.join(" ");
-    m.reply("*🎧 Searching for the song...*");
-
-    try {
-      const searchResults = await yts(searchQuery);
-      if (!searchResults.videos || searchResults.videos.length === 0) {
-        return m.reply(`❌ No results found for "${searchQuery}".`);
-      }
-
-      const firstResult = searchResults.videos[0];
-      const videoUrl = firstResult.url;
-
-      // First API endpoint
-      const apiUrl = `https://api.davidcyriltech.my.id/download/ytmp3?url=${videoUrl}`;
-      const response = await axios.get(apiUrl);
-
-      if (!response.data.success) {
-        return m.reply(`❌ Failed to fetch audio for "${searchQuery}".`);
-      }
-
-      const { title, download_url } = response.data.result;
-
-      // Send the audio file
-      await gss.sendMessage(
-        m.from,
-        {
-          audio: { url: download_url },
-          mimetype: "audio/mp4",
-          ptt: false,
+async function fetchJson(url, options = {}) {
+    const res = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            ...options.headers,
         },
-        { quoted: m }
-      );
+        ...options,
+    });
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    return await res.json();
+}
 
-      m.reply(`✅ *${title}* has been downloaded successfully!`);
-    } catch (error) {
-      console.error(error);
-      m.reply("❌ An error occurred while processing your request.");
+const play = async (m, sock) => {
+    const prefix = config.PREFIX;
+    const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+    const text = m.body.slice(prefix.length + cmd.length).trim();
+
+    if (cmd === "play") {
+        if (!text) {
+            return m.reply("🎶 Tell me the song you're in the mood for! 🎶");
+        }
+
+        try {
+            await sock.sendMessage(m.from, { text: `🔎 Finding "${text}"...` }, { quoted: m });
+
+            let kyuu = await fetchJson(`https://api.agatz.xyz/api/ytsearch?message=${encodeURIComponent(text)}`);
+            let songData = kyuu.data[0];
+
+            if (!songData) {
+                return m.reply("Hmm, couldn't find that tune. 😔 Maybe try again?");
+            }
+
+            let tylor = await fetchJson(`https://api.nexoracle.com/downloader/yt-audio2?apikey=free_key@maher_apis&url=${songData.url}`);
+            let audioUrl = tylor.result.audio;
+
+            if (!audioUrl) {
+                return m.reply("⚠️ Couldn't grab the audio. Let's try later! 😔");
+            }
+
+            await sock.sendMessage(m.from, {
+                audio: { url: audioUrl },
+                fileName: `${songData.title}.mp3`,
+                mimetype: "audio/mpeg",
+                contextInfo: {
+                    forwardingScore: 5,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterName: "🎶 The PopKid Jukebox 🎶",
+                        newsletterJid: "120363290715861418@newsletter",
+                    },
+                    externalAdReply: {
+                        title: `🎧 Now playing: ${songData.title} 🎧`,
+                        body: `.mp3 audio delivered`,
+                        thumbnailUrl: songData.thumbnail || 'https://files.catbox.moe/fhox3r.jpg',
+                        mediaType: 1,
+                        renderLargerThumbnail: true,
+                        thumbnailHeight: 500,
+                        thumbnailWidth: 500,
+                    },
+                },
+            }, { quoted: m });
+
+        } catch (error) {
+            console.error("Error in play command:", error);
+            m.reply("Hmm, something went wrong. 😅 Let's try again!");
+        }
     }
-  }
-};
+}
 
 export default play;
