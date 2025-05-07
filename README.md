@@ -1,50 +1,40 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=8A2BE2&center=true&width=1000&height=200&lines=POPKID-BMX" alt="Typing SVG" /></a>
-  </div>
-<a><img src='https://files.catbox.moe/kiy0hl.jpg'/></a>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=40&pause=1000&color=0000FF&center=true&vCenter=true&width=815&height=60&lines=🦋+▭+▬+▭+▬+▭+▬+▭+▬+▭+▬+▭+🐇)](https://git.io/typing-svg) 
 
-<p align="center">
-  <a href="https://github.com/devpopkid"><img title="Developer" src="https://img.shields.io/badge/Author-POPKID%20BMX-FF00FF.svg?style=big-square&logo=github" /></a>
-</p>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=900&color=1BAFBAFF&center=true&width=1100&height=150&lines=POPKID-+XTECH+BOT" alt="Typing SVG" /></a>
+  </p>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=monospace-ExtraBold&color=blue&lines=𝗙𝗢𝗥𝗞+𝗔𝗡𝗗+𝗦𝗧𝗔𝗥+⭐+𝗥𝗘𝗣𝗢)](https://git.io/typing-svg)
- <p align="lift">
-   <a href='https://github.com/devpopkid/POPKID-BMX/fork' target="_blank">
-    <img src='https://img.shields.io/badge/𝐅𝐎𝐑𝐊 𝐑𝐄𝐏𝐎-800080?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
-  </a></br>
 
- # 🤍 ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ
-</a></p>
-- <a href="https://xtechpairing-5d5744c3f3d8.herokuapp.com/"><img title="TAP FOR SESSION ID" src="https://img.shields.io/badge/LOG IN FOR SESSION ID-h?color=pink&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/></a></p>
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=DAA520&center=true&width=910&height=100&lines=POPKID+XTECH+TEAM+;KEEP+USING+POPKID+MD" alt="Typing SVG" /></a>
+  </p>
+ 
+  
+<a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l">
+ <img alt="𝐏𝐎𝐏𝐊𝐈𝐃 𝐗𝐓𝐄𝐂𝐇" height="350" src="https://files.catbox.moe/lkmvah.jpg"></a>
  
 
-## _📡 DEPLOYMENT_
+# ❤️ ғᴏʀᴋ ᴍʏ ʀᴇᴘᴏ
+- <a align="center"><a href="https://github.com/Popkiddevs/POPKID-XTECH/fork"> <img src="https://img.shields.io/badge/FORK%20REPO-colorless?style=for-the-badge&logo=porsche" width="220" height="38.45"/></a></p>
 
-<div align="center">
-  <table>
-    <tr>
-      <td><a href="https://dashboard.heroku.com/new-app?template=https://github.com/devpopkid/POPKID-BMX" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=0000FF"/></a></td>
-    </tr>
-    <tr>
-      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=devpopkid/POPKID-BMX"" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-    <tr>
-      <td><a href="https://dashboard.render.com/web/new" target="_blank"><img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white&labelColor=000000&color=00ffaa"/></a></td>
-    </tr>
-  </table>
-</div>
+# 🤍 ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ
+</a></p>
+- <a href="https://popkidxmdsessionsiteclim.onrender.com"><img title="TAP FOR SESSION ID" src="https://img.shields.io/badge/LOG IN FOR SESSION ID-h?color=pink&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/></a></p>
 
-## 🤖 _POPKID-BMX STATUS_
+# 💝 ᴄʀᴇᴀᴛᴇ ʜᴇʀᴏᴋᴜ
 
-```diff
-+ Project Status: Active
-! Version: 3.0.0 Neon Edition
-# License: MIT
-```
+</a></p>
+- <a href='https://signup.heroku.com/' target="_silver"><img alt='Heroku' src='https://img.shields.io/badge/-𝐂𝐑𝐄𝐀𝐓𝐄 𝐀𝐂𝐂𝐎𝐔𝐍𝐓 𝐍𝐎𝐖-rgb(224, 255, 255)?style=for-the-badge&logo=ferrari&logoColor=pink' width="240" height="38.45"/></a>
 
+# 🧡 ʜᴇʀᴏᴋᴜ ʜᴏsᴛɪɴɢ
+- <a align="center"><a href="https://tinyurl.com/yc3ae75m"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-blue?style=for-the-badge&logo=porsche" width="220" height="38.45"/></a></p>
 
+# ᴄʀᴇᴀᴛᴇ ᴛᴀʟᴋᴅʀᴏᴠᴇ ᴀᴄᴄᴏᴜɴᴛ
+- <a align="center"><a href="https://host.talkdrove.com/auth/signup?ref=F3E97634"> <img src="https://img.shields.io/badge/𝐂𝐑𝐄𝐀𝐓𝐄%20𝐀𝐂𝐂𝐎𝐔𝐍𝐓-grey?style=for-the-badge&logo=chevrolet" width="220" height="38.45"/></a></p>
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-  </div>
+# ᴛᴀʟᴋᴅʀᴏᴠᴇ ʜᴏsᴛɪɴɢ
 
+</a></p>
+- <a href='https://host.talkdrove.com/dashboard/select-bot/prepare-deployment?botId=53' target="_silver"><img alt='Talkdrove' src='https://img.shields.io/badge/-𝐓𝐀𝐋𝐊𝐃𝐑𝐎𝐕𝐄 𝐇𝐎𝐒𝐓𝐈𝐍𝐆-rgb(224, 255, 255)?style=for-the-badge&logo=ferrari&logoColor=orange' width="240" height="38.45"/></a>
 
-<h1> 𝐈𝐓𝐒 𝐏𝐎𝐏𝐊𝐈𝐃🧋❤️‍🔥 <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="45"> </h1>
+## 💖 CONTACT ME
+[![Whatsapp contact](https://img.shields.io/badge/Contact-Dev%20Popkid-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/+254111385747)
