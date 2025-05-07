@@ -33,8 +33,8 @@ const lime = chalk.bold.hex("#32CD32");
 let useQR = false;
 let initialConnection = true;
 const PORT = process.env.PORT || 3000;
-const whatsappChannelLink = 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l';
-const whatsappChannelId = '120363290715861418@newsletter'; // Ensure this is the correct format
+const whatsappChannelLink = 'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31';
+const whatsappChannelId = '0029VajweHxKQuJP6qnjLM31@newsletter'; // Ensure this is the correct format
 
 const MAIN_LOGGER = pino({
   timestamp: () => `,"time":"${new Date().toJSON()}"`
@@ -136,10 +136,7 @@ async function start() {
       const { connection, lastDisconnect } = update;
       if (connection === 'close') {
         if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
-          console.log(chalk.red(`⚠️ Connection closed unexpectedly: ${lastDisconnect?.error}`));
-          start(); // Attempt to reconnect
-        } else {
-          console.log(chalk.yellow('🚪 Connection logged out. Please re-authenticate.'));
+          start();
         }
       } else if (connection === 'open') {
         if (initialConnection) {
@@ -164,31 +161,27 @@ async function start() {
 ╰──────────────────
 🔗 Follow my WhatsApp Channel: ${whatsappChannelLink}`;
 
-          try {
-            await Matrix.sendMessage(Matrix.user.id, {
-              image,
-              caption,
-              contextInfo: {
-                isForwarded: true,
-                forwardingScore: 999,
-                forwardedNewsletterMessageInfo: {
-                  newsletterJid: whatsappChannelId,
-                  newsletterName: "popkid xmd ʙᴏᴛ",
-                  serverMessageId: -1,
-                },
-                externalAdReply: {
-                  title: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
-                  body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ",
-                  thumbnailUrl: 'https://files.catbox.moe/nk71o3.jpg',
-                  sourceUrl: whatsappChannelLink,
-                  mediaType: 1,
-                  renderLargerThumbnail: false,
-                },
+          await Matrix.sendMessage(Matrix.user.id, {
+            image,
+            caption,
+            contextInfo: {
+              isForwarded: true,
+              forwardingScore: 999,
+              forwardedNewsletterMessageInfo: {
+                newsletterJid: whatsappChannelId,
+                newsletterName: "popkid xmd ʙᴏᴛ",
+                serverMessageId: -1,
               },
-            });
-          } catch (error) {
-            console.error(chalk.red('Error sending initial connection message:'), error);
-          }
+              externalAdReply: {
+                title: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
+                body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ",
+                thumbnailUrl: 'https://files.catbox.moe/nk71o3.jpg',
+                sourceUrl: whatsappChannelLink,
+                mediaType: 1,
+                renderLargerThumbnail: false,
+              },
+            },
+          });
 
           try {
             await Matrix.sendMessage(Matrix.user.id, {
@@ -236,37 +229,23 @@ async function start() {
 
     Matrix.ev.on('creds.update', saveCreds);
     Matrix.ev.on("messages.upsert", async (chatUpdate) => {
+      await Handler(chatUpdate, Matrix, logger);
       try {
-        await Handler(chatUpdate, Matrix, logger);
-        if (config.AUTO_REACT && chatUpdate.messages?.[0]?.message) {
-          const mek = chatUpdate.messages[0];
+        const mek = chatUpdate.messages?.[0];
+        if (config.AUTO_REACT && mek?.message) {
           const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
           await doReact(randomEmoji, mek, Matrix);
         }
       } catch (err) {
-        console.error(chalk.red('Error in messages.upsert handler:'), err);
+        console.error('Error during auto reaction:', err);
       }
     });
-
-    Matrix.ev.on("call", async (json) => {
-      try {
-        await Callupdate(json, Matrix);
-      } catch (error) {
-        console.error(chalk.red('Error in call handler:'), error);
-      }
-    });
-
-    Matrix.ev.on("group-participants.update", async (messag) => {
-      try {
-        await GroupUpdate(Matrix, messag);
-      } catch (error) {
-        console.error(chalk.red('Error in group-participants.update handler:'), error);
-      }
-    });
+    Matrix.ev.on("call", async (json) => await Callupdate(json, Matrix));
+    Matrix.ev.on("group-participants.update", async (messag) => await GroupUpdate(Matrix, messag));
 
     Matrix.public = config.MODE === "public";
   } catch (error) {
-    console.error('Critical Error during startup:', error);
+    console.error('Critical Error:', error);
     process.exit(1);
   }
 }
