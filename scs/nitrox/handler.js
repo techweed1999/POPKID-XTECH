@@ -1,4 +1,3 @@
-
 import { serialize, decodeJid } from '../../lib/Serializer.js';
 import path from 'path';
 import fs from 'fs/promises';
@@ -21,8 +20,11 @@ export const getGroupAdmins = (participants) => {
     return admins || [];
 };
 
+const loadedPlugins = {}; // Cache for loaded plugins
+
 const Handler = async (chatUpdate, sock, logger) => {
     try {
+        console.time('MessageHandler');
         if (chatUpdate.type !== 'notify') return;
 
         const m = serialize(JSON.parse(JSON.stringify(chatUpdate.messages[0])), sock, logger);
@@ -61,29 +63,39 @@ const Handler = async (chatUpdate, sock, logger) => {
             }
         }
 
+        console.time('AntilinkExecution');
         await handleAntilink(m, sock, logger, isBotAdmins, isAdmins, isCreator);
-
-        const { isGroup, type, sender, from, body } = m;
-        console.log(m);
+        console.timeEnd('AntilinkExecution');
 
         const pluginDir = path.join(__dirname, '..', 'nitro');
         const pluginFiles = await fs.readdir(pluginDir);
 
+        console.time('PluginLoadingAndExecution');
         for (const file of pluginFiles) {
             if (file.endsWith('.js')) {
                 const pluginPath = path.join(pluginDir, file);
-               // console.log(`Attempting to load plugin: ${pluginPath}`);
+                const pluginName = file.slice(0, -3); // Remove .js extension
 
                 try {
-                    const pluginModule = await import(`file://${pluginPath}`);
-                    const loadPlugins = pluginModule.default;
+                    if (!loadedPlugins[pluginName]) {
+                        const pluginModule = await import(`file://${pluginPath}`);
+                        loadedPlugins[pluginName] = pluginModule.default;
+                        // console.log(`Successfully loaded and cached plugin: ${pluginPath}`);
+                    }
+
+                    const loadPlugins = loadedPlugins[pluginName];
+                    console.time(`ExecutePlugin-${pluginName}`);
                     await loadPlugins(m, sock);
-                   // console.log(`Successfully loaded plugin: ${pluginPath}`);
+                    console.timeEnd(`ExecutePlugin-${pluginName}`);
                 } catch (err) {
-                    console.error(`Failed to load plugin: ${pluginPath}`, err);
+                    console.error(`Failed to load or execute plugin: ${pluginPath}`, err);
                 }
             }
         }
+        console.timeEnd('PluginLoadingAndExecution');
+
+        console.log(m);
+        console.timeEnd('MessageHandler');
     } catch (e) {
         console.log(e);
     }
