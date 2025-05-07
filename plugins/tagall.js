@@ -1,64 +1,41 @@
-import config from '../../config.cjs';
+import config from '../config.cjs';
 
-// ⚙️ Module Configuration ⚙️
-const tagEveryoneInGroup = async (message, sock) => {
-  // 🔑 Retrieve Command Prefix 🔑
-  const trigger = config.PREFIX;
+const tagAll = async (m, gss) => {
+  try {
+    // Ensure the function is async
+    const botNumber = await gss.decodeJid(gss.user.id);
+    const prefix = config.PREFIX;
+const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+const text = m.body.slice(prefix.length + cmd.length).trim();
+    
+    // Check for the valid command
+    const validCommands = ['tagall'];
+    if (!validCommands.includes(cmd)) return;
 
-  // 🔍 Identify User's Intention 🔍
-  const userCommand = message.body.startsWith(trigger)
-    ? message.body.slice(trigger.length).trim().split(' ')[0].toLowerCase()
-    : '';
 
-  // ✅ Execute 'tagall' Command Logic ✅
-  if (userCommand === 'tagall') {
-    // 🛡️ Group Contextual Check 🛡️
-    if (!message.isGroup) {
-      return await sock.sendMessage(
-        message.from,
-        { text: '🚫 Command applicable within groups only.' },
-        { quoted: message }
-      );
+    const groupMetadata = await gss.groupMetadata(m.from);
+    const participants = groupMetadata.participants;
+    const botAdmin = participants.find(p => p.id === botNumber)?.admin;
+    const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
+    
+        if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
+
+    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
+    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
+    // Extract the message to be sent
+    let message = `乂 *Attention Everyone* 乂\n\n*Message:* ${m.body.slice(prefix.length + cmd.length).trim() || 'no message'}\n\n`;
+        
+
+
+    for (let participant of participants) {
+      message += `❒ @${participant.id.split('@')[0]}\n`;
     }
 
-    try {
-      // 📡 Fetch Real-time Group Data 📡
-      const groupData = await sock.groupMetadata(message.from);
-      const groupParticipants = groupData.participants;
-
-      // 🎯 Prepare User Mentions 🎯
-      const targets = groupParticipants.map(({ id }) => id);
-
-      // 🎨 Craft the Notification Message 🎨
-      const announcementHeader = `📢 🔔 Paging All Members! 🔔 📢\n\n`;
-      let announcementBody = '';
-      for (const member of groupParticipants) {
-        const userName = member.id.split('@')[0];
-        announcementBody += `👤 🔗 @${userName} is here!\n`; // Emphasizing presence
-      }
-      const announcementFooter = `\n✨ ${groupParticipants.length} members have been notified. ✨`;
-
-      const broadcastMessage = announcementHeader + announcementBody + announcementFooter;
-
-      // 🚀 Dispatch the Tagging Notification 🚀
-      await sock.sendMessage(
-        message.from,
-        { text: broadcastMessage, mentions: targets },
-        { quoted: message }
-      );
-    } catch (error) {
-      // 🚨 Handle Potential Issues 🚨
-      console.error('🔥 Action Failed: Unable to tag all members:', error);
-      await sock.sendMessage(
-        message.from,
-        {
-          text:
-            '⚠️ Alert: Tagging operation encountered an issue. Ensure necessary permissions are granted.',
-        },
-        { quoted: message }
-      );
-    }
+    await gss.sendMessage(m.from, { text: message, mentions: participants.map(a => a.id) }, { quoted: m });
+  } catch (error) {
+    console.error('Error:', error);
+    await m.reply('An error occurred while processing the command.');
   }
 };
 
-export default tagEveryoneInGroup;
+export default tagAll;
