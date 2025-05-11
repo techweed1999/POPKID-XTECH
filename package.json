@@ -2,10 +2,10 @@
   "name": "POPKID-XMD",
   "version": "10.8.1",
   "description": "POPKID XMD The Fastest Bot",
-  "main": "body.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start body.js --deep-monitoring --attach --name POPKID-XMD",
+    "start": "pm2 start index.js --deep-monitoring --attach --name POPKID-XMD",
     "stop": "pm2 stop POPKID-XMD",
     "restart": "pm2 restart POPKID-XMD"
   },
