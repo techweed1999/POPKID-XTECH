@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: 🇵 🇴 🇵 🇰 🇮 🇩  🇽 🇲 🇩   1.2.0
-    env: node
-    region: Nairobi
-    buildCommand: "yarn install"
-    startCommand: "npm start"
-    plan: free
