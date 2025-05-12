@@ -94,23 +94,18 @@ const menu = async (m, sock) => {
 
 📢 *ᴅᴇᴠ ᴘᴏᴘᴋɪᴅ*
 `;
-
-    try {
-      await sock.sendMessage(m.from, {
-        image: { url: profilePictureUrl },
-        caption: menuText.trim(),
-        contextInfo: {
-          forwardingScore: 5,
-          isForwarded: true,
-          forwardedNewsletterMessageInfo: {
-            newsletterName: "𝗣𝗼𝗽𝗸𝗶𝗱 𝗫𝗺𝗱",
-            newsletterJid: "120363290715861418@newsletter",
-          },
-        }
-      }, { quoted: m });
-    } catch (err) {
-      console.error("Failed to send menu message:", err);
-    }
+    await sock.sendMessage(m.from, {
+      image: { url: profilePictureUrl },
+      caption: menuText.trim(),
+      contextInfo: {
+        forwardingScore: 5,
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+          newsletterName: "Popkid-Xmd",
+          newsletterJid: "120363290715861418@newsletter",
+        },
+      }
+    }, { quoted: m });
   }
 };
 
