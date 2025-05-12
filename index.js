@@ -172,7 +172,7 @@ async function start() {
                             externalAdReply: {
                                 title: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
                                 body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ",
-                                thumbnailUrl: 'https://files.catbox.moe/nk71o3.jpg',
+                                thumbnailUrl: 'https://files.catbox.moe/na4d5a.jpg',
                                 sourceUrl: 'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31',
                                 mediaType: 1,
                                 renderLargerThumbnail: false,
