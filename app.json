@@ -1,8 +1,8 @@
 {
-  "name": "ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ",
-  "description": "A rich whatsapp bot by popkid",
-  "logo": "https://files.catbox.moe/nw3mmc.jpg",
-  "keywords": ["Popkid-bot"],
+  "name": "POPKID-MD",
+  "description": "Javascript WhatsApp bot made by Popkid",
+  "logo": "https://files.catbox.moe/8xk9cz.jpg",
+  "keywords": ["POPKID_XTECH"],
   "success_url": "/",
 
     "stack": "container",
@@ -13,18 +13,12 @@
       "value": ""
     },  
     
-    "ALIVE_IMG": {
-      "description": "paste your image url if you don't have you can use this public url.",
+    "STICKER_NAME": {
+      "description": "type your sticker pack name.",
       "required": false,
-      "value": "https://files.catbox.moe/nw3mmc.jpg"
+      "value": "POPKID-MD"
     }, 
-    
-    "LIVE_MSG": {
-      "description": "paste your alive message hear.",
-      "required": false,
-      "value": "> [❤️‍🩹] Popkid Xtech Is Online"
-    },
-    
+      
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
       "required": false,
@@ -70,22 +64,29 @@
       "value": "true"
     }, 
 
+    "AUTO_STATUS_REACT": {
+      "description": "make it true for automatic status reaction or like.",
+      "required": true,
+      "value": "true"
+    }, 
+
     "AUTO_STATUS_REPLY": {
       "description": "Make it true for auto reply msg on status seen.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*POPKID XTECH  VIEWED YOUR STATUS 🤖*"
-    }, 
-
+      "value": "*SEEN YOUR STATUS BY POPKID-MD 🖤*"
+   
+     }, 
+    
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ"
+      "value": "Popkid"
 }, 
 
     "OWNER_NUMBER": {
@@ -98,7 +99,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "『 𝗣𝗢𝗣𝗞𝗜𝗗 𝗫𝗧𝗘𝗖𝗛 』"
+      "value": "𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗"
 
       }, 
 
@@ -115,10 +116,22 @@
       "value": "false"
     }, 
 
-     "DESCRIPTION": {
+    "MENTION_REPLY": {
+      "description": "make it true if want mention reply if someone menetion you.",
+      "required": false,
+      "value": "false"
+    },
+    
+    "MENU_IMAGE_URL": {
+      "description": "add url for mention reply and menu if want.",
+      "required": false,
+      "value": "https://files.catbox.moe/tkebt3.jpg"
+    },
+     
+    "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*> *© 𝗽𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗽𝗼𝗽𝗸𝗶𝗱 𝘅𝘁𝗲𝗰𝗵*"
+      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ PopkidXtech*"
     },
 
       "DELETE_LINKS": {
@@ -158,10 +171,10 @@
       "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
     }, 
     
-    "READ_CMD": {
-      "description": "make it true if want mark commands as read.",
+    "ANTI_DEL_PATH": {
+      "description": "change it to -same- if you want to resend deleted message in same chat",
       "required": false,
-      "value": "false"
+      "value": "log"
     }, 
 
     "READ_MESSAGE": {
