@@ -3,9 +3,9 @@ const { cmd, commands } = require('../command');
 const axios = require('axios');
 
 cmd({
-  pattern: 'analyse',
-  alias: ['vision'],
-  react: '💡',
+  pattern: "analyse",
+  alias: ["vision"],
+  react: "💡",
   desc: 'Analyze image with instruction.',
   category: 'tools',
   filename: __filename
