@@ -6,8 +6,8 @@ cmd({
   pattern: "analyse",
   alias: ["vision"],
   react: "💡",
-  desc: 'Analyze image with instruction.',
-  category: 'tools',
+  desc: "Analyze image with instruction.",
+  category: "tools",
   filename: __filename
 }, async (conn, mek, m, {
   from,
