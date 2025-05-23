@@ -82,9 +82,9 @@ async (conn, mek, m, { from, reply, q, text, isCreator, fromMe }) => {
 });
 
 cmd({
-    pattern: "vv3",
+    pattern: "anticall",
     alias: ['retrive', '🔥'],
-    desc: "Fetch and resend a ViewOnce message content (image/video/audio).",
+    desc: "decline all calls❗❌❌.",
     category: "misc",
     use: '<query>',
     filename: __filename
@@ -94,10 +94,10 @@ async (conn, mek, m, { from, reply }) => {
         const quotedMessage = m.msg.contextInfo.quotedMessage; // Get the quoted message
 
         // Check if it's a ViewOnce message
-        if (quotedMessage && quotedMessage.viewOnceMessageV2) {
-            const quot = quotedMessage.viewOnceMessageV2;
+        if (quotedMessage && quotedMessage.anticall) {
+            const quot = quotedMessage.anticall;
 
-            if (quot.message.imageMessage) {
+            if (quot.message.callhandler) {
                 let caption = quot.message.imageMessage.caption;
                 let media = await conn.downloadAndSaveMediaMessage(quot.message.imageMessage);
                 return conn.sendMessage(from, { image: { url: media }, caption }, { quoted: mek });
