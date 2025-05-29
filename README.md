@@ -61,5 +61,13 @@
 
 ---
 
+❤️<!-- TALKDROVE HOSTING -->
+<h2 align="center">🤍 ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ</h2>
+<p align="center">
+  <a href="https://host.talkdrove.com/dashboard/select-bot/prepare-deployment?botId=53">
+    <img title="HOST ON TALKDROVE" src="https://img.shields.io/badge/DEPLOY%20IT%20ON%20YOUR%20TALKDROVE-h?color=pink&style=for-the-badge&logo=porsche&logoColor=white&labelColor=black" width="240" height="45"/>
+  </a>
+</p>
+
 ## 💖 Contact Me
 [![Whatsapp contact](https://img.shields.io/badge/Contact-Dev%20Popkid-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/+254111385747)
