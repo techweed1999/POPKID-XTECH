@@ -62,7 +62,7 @@
 ---
 
 ❤️<!-- TALKDROVE HOSTING -->
-<h2 align="center">🤍 ɢᴇᴛ ᴘᴀɪʀ ᴄᴏᴅᴇ</h2>
+<h2 align="center">🤍 TALKDROVE HOST</h2>
 <p align="center">
   <a href="https://host.talkdrove.com/dashboard/select-bot/prepare-deployment?botId=53">
     <img title="HOST ON TALKDROVE" src="https://img.shields.io/badge/DEPLOY%20IT%20ON%20YOUR%20TALKDROVE-h?color=pink&style=for-the-badge&logo=porsche&logoColor=white&labelColor=black" width="240" height="45"/>
